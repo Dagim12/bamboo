@@ -1,0 +1,2463 @@
+@font-face {
+  font-family: 'Kaushan Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Kaushan Script'), local('KaushanScript-Regular'), url(https://fonts.gstatic.com/s/kaushanscript/v6/vm8vdRfvXFLG3OLnsO15WYS5DG72wNJHMw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Kaushan Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Kaushan Script'), local('KaushanScript-Regular'), url(https://fonts.gstatic.com/s/kaushanscript/v6/vm8vdRfvXFLG3OLnsO15WYS5DG74wNI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+:root {
+  --gray: #6c6c6c;
+  --black: #000000;
+  --green: #73b21a;
+  --white: #ffffff;
+  --white1: #eaeaea;
+  --nero: #222222;
+  --lightgray: #6e6e6e;
+  --lightgray2: #d7d7d7;
+  --lightgray1: #b5b7b9;
+  --lightgray3: #929498;
+}
+:root {
+  --common-font-st: 'Playfair Display SC', serif;
+  --common-font-head: 'Krub', sans-serif;
+  --common-font-para: "Roboto";
+  --common-font-body: 'Poppins';
+}
+html body, img, h1, h2, h3, h4, h5, h6, section h2, .widget_recent_entries ul, .widget.widget_calendar table {
+  margin:0;
+}
+html body, img, p, ul, ol, section h2, section h5, .widget_calendar td, .widget_calendar th{
+  padding:0;
+}
+html body{ 
+  -ms-word-wrap:break-word; 
+  word-wrap:break-word; 
+  background-color: var(--white); 
+  position:relative; 
+  font-size: 15px;
+  color: var(--gray);
+  font-family: var(--common-font-body);
+  font-weight: 300;
+}
+img{
+  border:none; 
+  max-width:100%; 
+  height:auto;
+}
+h1, h2, h3, h4, h5, h6{
+  padding:10px 0;
+  letter-spacing: 1px;
+  font-family: var(--common-font-body);
+  color: var(--black);
+}
+p{
+  margin:0 0 15px;
+  font-size:15px;
+  font-weight:300;
+}
+p, ul li a{
+  letter-spacing: 0px;
+}
+body a{
+  text-decoration:none; 
+  color: var(--nero);
+}
+a:hover{
+  color: var(--lightgray);
+  text-decoration: none;
+}
+ul,ol{ 
+  margin:0 15px 0 0;
+}
+ul li, ol li{font-size: 14px;}
+:hover{-webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+}
+blockquote {
+  font-size: 18px;
+  font-style: italic;
+  max-width: 450px;
+  margin: 0.25em 0;
+  padding: 0.25em 40px;
+  line-height: 1.45;
+  position: relative;
+  color: var(--gray);
+}
+blockquote:before, blockquote:after {
+  display: block;
+  font-size: 80px;
+  position: absolute;
+  right: 0px;
+  top: -10px;
+  color: var(--lightgray);
+}
+blockquote:before {
+  content: "\201C";
+}
+blockquote:after {
+  content: "\201D";
+}
+blockquote cite {
+  color: var(--lightgray);
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+}
+blockquote cite:before {
+  content: "\2014 \2009";
+}
+small{
+  font-size:14px !important;
+}
+input[type="text"], input[type="tel"], input[type="email"], input[type="phno"],input[type="password"], textarea, select, table{
+  width: 100%;
+}
+input[type="text"], input[type="tel"], input[type="email"], input[type="phno"],input[type="password"], textarea{
+  border:1px solid var(--nero);
+  font-size:16px;
+  padding:10px 10px; 
+  margin:0 0 0px 0;
+  height:auto;
+  background: transparent;
+}
+section{
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 60px 0;
+}
+select{
+  padding: 6px;
+}
+input[type="submit"] {
+  padding: 10px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  background-color: var(--green);
+}
+input[type="submit"]:hover{
+  cursor: pointer;
+}
+textarea {
+  height: 80px;
+}
+.bounce, .flash, .pulse, .shake, .swing, .tada, .wobble, .bounceIn, .bounceInDown, .bounceInLeft, .bounceInRight, .bounceInUp, .bounceOut, .bounceOutDown, .bounceOutLeft, .bounceOutRight, .bounceOutUp, .fadeIn, .fadeInDown, .fadeInDownBig, .fadeInLeft, .fadeInLeftBig, .fadeInRight, .fadeInRightBig, .fadeInUp, .fadeInUpBig, .fadeOut, .fadeOutDown, .fadeOutDownBig, .fadeOutLeft, .fadeOutLeftBig, .fadeOutRight, .fadeOutRightBig, .fadeOutUp, .fadeOutUpBig, .flip, .flipInX, .flipInY, .flipOutX, .flipOutY, .lightSpeedIn, .lightSpeedOut, .rotateIn, .rotateInDownLeft, .rotateInDownRight, .rotateInUpLeft, .rotateInUpRight, .rotateOut, .rotateOutDownLeft, .rotateOutDownRight, .rotateOutUpLeft, .rotateOutUpRight, .slideInDown, .slideInLeft, .slideInRight, .slideOutLeft, .slideOutRight, .slideOutUp, .rollIn, .rollOut, .zoomIn, .zoomInDown, .zoomInLeft, .zoomInRight, .zoomInUp, .slideInUp{
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  visibility: visible!important;
+}
+.comment-list .comment-content ul { 
+  list-style:none; 
+  margin-right:15px;
+}
+.comment-list .comment-content ul li{
+  margin:5px;
+}
+table, td, th {
+  border: 1px solid black;
+}
+/*-------------------------- Calendar widget --------------------------*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0 0 1.75em;
+  table-layout: fixed;
+}
+.widget.widget_calendar td, .widget.widget_calendar tr, .widget.widget_calendar th {
+  border: 1px solid var(--white);
+  color: var(--black);
+}
+input[type="submit"], .widget_calendar caption, .widget_calendar tbody a, #vw_gardening_footer .widget.widget_calendar td, #vw_gardening_footer .widget.widget_calendar tr, #vw_gardening_footer .widget.widget_calendar th {
+  color: var(--white);
+}
+.widget_calendar td, .widget_calendar th {
+  line-height: 1.5625;
+  text-align: center;
+}
+.widget_calendar caption {
+  font-weight: 900;
+  margin-bottom: 0em;
+  padding-right: 15px;
+  caption-side: top;
+}
+.widget_calendar tbody a {
+  background-color: var(--lightgray1);
+  display: block;
+  font-weight: 700;
+}
+.widget_calendar tbody a:hover, .widget_calendar tbody a:focus {
+  background-color: var(--lightgray);
+}
+.widget th, .widget td {
+  padding: 0em;
+}
+/*-------------------- Sweep To Right -----------------------*/
+.hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-right:hover:before,
+.hvr-sweep-to-right:focus:before,
+.hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+/*----------------------  index ---------------------------*/
+.post-section {
+  padding: 20px 0;
+}
+/*------------------------- Headings --------------------------*/
+section h2{
+  font-weight:bold;
+  padding: 0 0 10px;
+  letter-spacing: 3px;
+}
+section h4{ 
+  font-size:20px;
+}
+section h5{
+  color: var(--nero); 
+  font-weight:bold;
+  margin:0 0 10px 0;
+}
+.innerbox{
+  background-size:100% 100%;
+}
+/* ---------------- Button Effects --------------- */
+.hvr-bounce-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hvr-bounce-out:hover, .hvr-bounce-out:focus, .hvr-bounce-out:active {
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+/*-------------- Owl crousel ---------------*/
+.owl-carousel .owl-item img {
+  width: auto !important;
+  margin: 0 auto;
+}
+button.owl-next, button.owl-prev {
+  background: var(--nero);
+}
+button.owl-prev, button.owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  padding: 10px 20px;
+}
+button.owl-prev {
+  right: -10px;
+}
+button.owl-next {
+  left: -10px;
+}
+/* ----------- Spinner ------------- */
+.spinner-loading-box{
+  position: fixed;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #24a500;
+  z-index: 9999;
+}
+.spinner-loading-box .lds-ripple {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+}
+.spinner-loading-box .lds-ripple div {
+  position: absolute;
+  border: 4px solid #fff;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.spinner-loading-box .lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 28px;
+    right: 28px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: -1px;
+    right: -1px;
+    width: 58px;
+    height: 58px;
+    opacity: 0;
+  }
+}
+/* --------------- Common CSS --------------- */
+.head-foot-fontfam, #vw_gardening_footer h3, #vw_gardening_footer .textwidget input[type="submit"], #vw_gardening_footer .post-content a, #vw_gardening_footer .copyright p{
+  font-family: 'Krub', sans-serif;
+  font-weight: 700;
+}
+#topbar-social-search, .main-header-box .header-button a span, #vw_gardening_footer h3:after{
+  background-color: #73b21a;
+}
+#topbar-social-search .socialbox, .closepop, .copyright .socialbox{
+  text-align: left;
+}
+#topbar-social-search span, #topbar-social-search .socialbox i, .main-header-box .header-button a span{
+  color: #000;
+}
+#topbar-social-search span, #vw_gardening_footer ul li a, #vw_gardening_footer .about_me table p{
+  font-family: "Roboto";
+  font-weight: 500;
+}
+.close-sidebar, .side-navigation a, .side-navigation ul li:hover>ul, .side-navigation ul ul li, .main-header-box .header-button a span, #return-to-top, #vw_gardening_footer h3:after {
+  display: block;
+}
+.spinner-loading-box .lds-ripple, #topbar-social-search .topbar-search span, .side-navigation li.current_page_item, .side-navigation li, #footer .custom-social-icons a, #footer .textwidget input[type="submit"], .social_widget a {
+  display: inline-block;
+}
+.search_popup input.search-field, #vw_gardening_header .logo p, #return-to-top i, #return-to-top:hover i, #vw_gardening_footer .copyright a, #vw_gardening_footer .textwidget input[type="email"], #vw_gardening_footer .textwidget input[type="email"]::placeholder, #vw_gardening_footer .post-content a, .footer-social .socialbox a i, #vw_gardening_header .logo h1 a, span.credit_link a, #vw_gardening_footer {
+  color: #fff;
+}
+.main-header-box .header-button a span, #vw_gardening_footer .post-content a{
+  letter-spacing: 1px;
+}
+.spinner-loading-box, #topbar-social-search .topbar-search span, .serach_outer i, .close-sidebar, #vw_gardening_footer .copyright a{
+  cursor: pointer;
+}
+.search_popup input.search-submit, .search_popup input.search-field, .main-header-box .header-button a, .main-header-box .header-button a span, #vw_gardening_footer .textwidget input[type="submit"] {
+  border-radius: 40px;
+}
+#vw_gardening_header .logo p, .side-navigation ul ul a, #vw_gardening_footer .textwidget p  {
+  font-size: 14px;
+}
+.spinner-loading-box, .serach_outer, .vw_gardening_serach_inner, .closepop, .vw_gardening_serach_inner form.search-form, .home.page-template .header-wrap, #vw_gardening_header .scrolled{
+  width: 100%;
+}
+.serach_outer, .headerbar, amp-sidebar#sidebar1, .side-navigation ul ul, #vw-sticky-onoff {
+  display: none;
+}
+/* --------------- Topbar --------------- */
+#topbar-social-search span{
+  padding-left: 15px;
+}
+#topbar-social-search .socialbox i{
+  padding: 16px 9px 16px 0;
+  margin-right: 10px;
+}
+#topbar-social-search .topbar-search span{
+  background: rgba(2,2,2,.2);
+  padding: 16px 10px;
+}
+#topbar-social-search .topbar-text{
+  padding-top: 15px;
+}
+/*-----------------Search pop up----------------*/
+.serach_outer {
+  position: fixed;
+  height: 100%;
+  overflow: hidden;
+  transition: 0.5s;
+  z-index: 999999999999;
+  top: 0;
+  right: 0;
+  background-color: rgba(0,0,0, 0.8);
+}
+.vw_gardening_serach_inner {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.closepop {
+  position: absolute;
+  top: 29%;
+  transform: translateY(-50%);
+  left: 0;
+  margin-left: 28px;
+  z-index: 999999;
+}
+.serach_outer i {
+  font-size: 24px;
+  padding: 4px 0 0 0;
+  color: #bbb;
+}
+.vw_gardening_serach_inner form.search-form {
+  display: table;
+  border-radius: 0;
+  margin: 0 auto;
+  max-width: 700px;
+}
+.search_popup input.search-submit, .search_popup input.search-field {
+  background: transparent;
+  border: 2px solid #fff;
+}
+.search_popup input.search-submit {
+  padding: 10px 29px;
+}
+.search_popup label {
+  background: transparent;
+  width: 81%;
+}
+.search_popup input.search-field {
+  padding: 1.5% 0;
+  width: 80%;
+  text-indent: 8px;
+}
+/* --------------------------Header---------------------------- */
+#vw_gardening_header .logo img{
+  max-height: 123px;
+  width: auto;
+}
+#vw_gardening_header .logo h1 a{
+  font-size: 23px;
+  font-family: 'Playfair Display SC', serif;
+  font-weight: 700;
+}
+#vw_gardening_header .logo p {
+  margin-bottom: 0;
+}
+.home.page-template .header-wrap{
+  position: absolute;
+  padding-top: 30px;
+}
+.header-wrap{
+  background-color: #30374c;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.menubar {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: position 10s;
+  -ms-transition: position 10s;
+  -o-transition: position 10s;
+  transition: all 0.5s ease;
+}
+.hamburger i,.headerbar, .close-sidebar, .side-navigation a{
+  color: rgb(255, 255, 255);
+}
+.side-navigation>li {
+  list-style: none;
+  margin-bottom: 10px
+}
+.close-sidebar {
+  position: absolute;
+  top: 0px;
+  left: 25px;
+  font-size: 36px;
+  margin-right: 50px;
+}
+.headerbar {
+  font-size: 30px;
+  font-weight:900;
+}
+.home .side-navigation ul {
+  border-bottom: 1px solid rgb(103, 98, 96);
+  width: max-content;
+  margin: 0px auto;
+}
+.side-navigation li {
+  position: relative;
+  padding: 17px 12px;
+}
+.side-navigation li.current_page_item {
+  border-bottom: 2px solid rgb(115, 178, 26);
+}
+.side-navigation a {
+  text-transform: none;
+  font-size: 15px;
+  font-family: Roboto;
+  font-weight: 600;
+  padding: 0px;
+}
+.side-navigation ul ul>li.menu-item-has-children>a:before,.side-navigation li.current_page_item ul.sub-menu a:before,.side-navigation li.current_page_item ul.sub-menu:before,.side-navigation li.current_page_item ul.sub-menu li:before{
+  content: none !important;
+}
+.side-navigation ul ul {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background: #F6F6F6; 
+  min-width: 215px;
+  z-index: 9999;
+}
+.side-navigation ul ul li {
+  float: none;
+  text-align: right;
+  border-bottom: 1px solid #cccccc;
+  padding: 5px 12px;
+  margin: 0px;
+}
+.side-navigation ul ul ul {
+  right: 100%;
+  top: 0%;
+}
+.side-navigation ul ul a {
+  padding: 10px 5px;
+  transition: all .5s ease 0s;
+  text-transform: none;
+  font-weight: 400;
+  color: #1e1d1c;
+  line-height: 1.5;
+}
+.side-navigation ul>li.menu-item-has-children>a:after, .side-navigation ul ul>li.menu-item-has-children>a:after {
+  position: static;
+  margin-right: 5px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  float: left;
+}
+.side-navigation ul>li.menu-item-has-children>a:after {
+  content: "\f107";
+  margin-top: 5%;
+}
+.side-navigation ul ul>li.menu-item-has-children>a:after {
+  content: "\f105";
+  margin-top: 0%;
+}
+.side-navigation ul>li.menu-item-has-children>a:before {
+  content: '';
+  position: absolute;
+  z-index: 1000;
+  right: 50%;
+  bottom: -9px;
+  margin-right: -14px;
+  border: 7px solid;
+  opacity: 0;
+  transition: opacity ease-in .08s;
+}
+#vw_gardening_header .scrolled {
+  position: fixed !important;
+  top: 0;
+  z-index: 9999999;
+  background: #fff;
+}
+.main-header-box .header-button a{
+  border:2px dashed #73b21a;
+  padding: 7px;
+}
+.main-header-box .header-button a span{
+  padding:8px 10px;
+}
+.stickynavbar {
+  padding-top: 0 !important;
+  box-shadow: 0 0 8px grey;
+  background-color: #30374c !important;
+  z-index: 12;
+}
+.sticky {
+  position: fixed;
+  top: 0px;
+  padding: 5px 15px;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
+.nav_wrap {
+  clear:both;
+  background-color: transparent;
+  margin-bottom: 0em;
+  z-index: 99;
+}
+/* ---------- Return to Top ------------ */
+#return-to-top {
+  position: fixed;
+  bottom: 10px;
+  left: 20px;
+  background:#73b21a;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 99;
+}
+#return-to-top i {
+  position: relative;
+  top: 13px;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding: 3px 18px;
+}
+#return-to-top:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+  top: 5px;
+}
+.page-template-default .woocommerce a.button, .page-template-default .woocommerce a.button.alt{
+  background: #73b11b;
+}
+.footer-social .socialbox a, #vw_gardening_footer .textwidget input[type="email"] {
+  border-left: none;
+}
+/*-------------Footer Menu ------------*/
+#footer_box {
+  padding: 60px 0 10px 0;
+}
+#vw_gardening_footer .footer-links{
+  background-color: #fff;
+}
+/* --------- Social Icon Widget ------- */
+.social_widget a {
+  color: #8e929f;
+  padding: 7px 7px;
+  margin-left: 7px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+}
+.social_widget a i {
+  font-size: 13px;
+  letter-spacing: 3px;
+  width: 20px;
+  text-align: center;
+}
+/*---------------- Footer Section ----------------------*/
+#vw_gardening_footer_box{
+  padding: 60px 0 10px 0;
+}
+#vw_gardening_footer{
+  background-color: #222222;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.outer-footer {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.footer-top {
+  padding-bottom: 50px;
+}
+.footer-top-col h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.outer-footer {
+  background-size: 100% 100%;
+}
+#vw_gardening_footer form.search-form{
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+#vw_gardening_footer form.search-form input{
+  float: none;
+  border: 1px solid #fff;
+  margin: 0px 2px;
+}
+#vw_gardening_footer input[type="search"]{
+  padding: 8px;
+}
+#vw_gardening_footer textarea{
+  height: 100px;
+}
+#vw_gardening_footer p.post-date {
+  color: #7f8391;
+  font-size: 12px;
+}
+.main_sociobox {
+  padding: 20px 0;
+}
+.footer_hide{
+  display:none;
+}
+#vw_gardening_footer h3 {
+  font-size: 24px;
+  letter-spacing: 2px;
+  color: #f7f7f7;
+  padding:10px 0 17px 0;
+}
+#vw_gardening_footer h3:after{
+  content: "";
+  width: 45px;
+  height: 3px;
+  margin-top: 20px;
+}
+#vw_gardening_footer .copyright p{
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #a4a3a3;
+  font-weight: normal;
+}
+#vw_gardening_footer ul li{
+  list-style:none;
+  margin:0 0 5px 0;
+  padding: 5px;
+}
+#vw_gardening_footer ul li a{
+  font-size: 15px;
+  letter-spacing: 0px;
+  color: #919191;
+}
+#vw_gardening_footer .about_me table p{
+  font-size: 15px;
+  letter-spacing: 0px;
+  color: #9e9d9d;
+  margin-bottom: 0;
+}
+.widget_recent_entries img {
+  width: 70px;
+}
+.about_me table, .about_me td, .about_me th{
+  border: none;
+}
+.about_me p.message {
+  margin-bottom: 20px !important;
+}
+.copyright{
+  padding-top: 30px;
+  border-top:1px solid #676260;
+}
+#vw_gardening_footer .textwidget input[type="email"]{
+  border-bottom:1px solid #9e9d9d;
+  border-right: none;
+  border-top:none;
+}
+#vw_gardening_footer .textwidget input[type="submit"]{
+  background-color: #73b119;
+  padding: 7px 20px;
+  margin-top: 17px;
+}
+#vw_gardening_footer .about_me i{
+  font-size: 20px;
+  color:#8b8b8b;
+}
+#vw_gardening_footer .widget td {
+  padding-top: 0px !important;
+}
+#vw_gardening_footer li.current_page_item{
+  background-color: transparent;
+  border-bottom: 3px solid #73b21a;
+}
+#vw_gardening_footer li.current_page_item a{
+  color: #73b21a !important;
+}
+#vw_gardening_footer .textwidget p{
+  line-height: 30px;
+  color: #9e9d9d;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+#vw_gardening_footer .footer-cols{
+  padding-bottom: 30px;
+}
+.copyright .socialbox i{
+  padding-left: 10px;
+}
+#vw_gardening_footer .widget_nav_menu ul{
+  margin-right: 0;
+}
+.hvr-shrink {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+/* --------- SLIDER--------- */
+#vw_gardening_slider{ 
+  max-width:100%;  
+  position:relative;
+}
+#vw_gardening_slider img {
+  background:var(--black);
+}
+#vw_gardening_slider h1 {
+  padding-top: 15px;
+  font-size: 48px;
+}
+#vw_gardening_slider p {
+  margin: 15px 0 15px 0;
+}
+.slider-box {
+  top: 56%;
+  transform: translateY(-50%);
+  padding: 20px;
+  max-width: 56%;
+  margin: 0 auto;
+  right: 0;
+}
+#vw_gardening_slider .carousel-caption {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+#vw_gardening_slider .carousel-prev-button {
+  left: 0px;
+  bottom: 26%;
+}
+#vw_gardening_slider .carousel-next-button{
+  left: 60px;
+  bottom: 26%;
+}
+#vw_gardening_slider .carousel-control-prev-icon,
+#vw_gardening_slider .carousel-control-next-icon{
+  background-image:none; 
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon{
+  width: auto;
+  height: auto;
+}
+#vw_gardening_slider a i {
+  padding: 12px 14px;
+  font-size: 17px;
+  width: 40px;
+  height:40px;
+  border-radius: 50%;
+}
+#vw_gardening_slider .slide_nav a {
+  border-radius: 50%;
+  padding: 5px 6px;
+  width: 55px;
+  height:55px;
+}
+#vw_gardening_slider .slide_nav a:hover i, #vw_gardening_slider .read-more:hover span, #vw_gardening_slider ol.carousel-indicators .active, .section-small_title:after, .section-small_title:before, #our-expertise .our-expertise-features:hover a span, #about-us .section-small_title:after, #about-us .about-feature-content i, #our-services .services-box h5:after, #our-services .owl-carousel .owl-dots .active, #working-process .working-process-box:hover, #working-process .working-process-box:hover i, #our-project .project-tabs ul li .active span, #pricing-plans .pricing-plans-box:hover .pricing-plans-content-box, #pricing-plans .owl-carousel .owl-dots .active, #our-products .owl-carousel .owl-dots .active, #testimonials .testimonials-icons i:hover, #testimonials .owl-carousel .owl-dots .active, #our-team .team-meta a i:hover, #our-team .owl-carousel .owl-dots .active, #why-choose-us .why-choose-us-content:hover, #why-choose-us .why-choose-us-content:hover span, #our-blog .owl-carousel .owl-dots .active, #our-blog .our-blog-content:hover .blog-date, #our-partners .owl-carousel .owl-dots .active {
+  background-color: var(--green);
+}
+#vw_gardening_slider .read-more {
+  border-radius: 40px;
+  padding: 6px;
+  margin-left: 17px;
+  margin-top: 10px;
+}
+#vw_gardening_slider .read-more span {
+  letter-spacing: 1px;
+  border-radius: 40px;
+  padding: 8px 11px;
+  display: block;
+}
+#vw_gardening_slider .read-more:hover span {
+  color: var(--white);
+}
+.carousel-fade .carousel-item {
+ opacity: 0;
+ transition-duration: .6s;
+ transition-property: opacity;
+}
+.carousel-fade  .carousel-item.active, .carousel-fade  .carousel-item-next.carousel-item-left, .carousel-fade  .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+}
+.carousel-fade .active.carousel-item-left, .carousel-fade  .active.carousel-item-right {
+  opacity: 0;
+}
+.carousel-fade  .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item.active, .carousel-fade .active.carousel-item-left, .carousel-fade  .active.carousel-item-prev {
+  transform: translateX(0);
+  transform: translate3d(0, 0, 0);
+}
+#vw_gardening_slider ol.carousel-indicators {
+  bottom: 50%;
+  right: auto;
+  transform: rotate(-90deg);
+  margin-left: 0;
+}
+#vw_gardening_slider ol.carousel-indicators .active, #testimonials .testimonials-icons i:hover, #our-team .team-meta a i:hover, #why-choose-us .why-choose-us-content:hover, #why-choose-us .why-choose-us-content:hover span {
+  border:2px solid var(--green);
+}
+ol.carousel-indicators li {
+  max-width: 10px;
+  padding: 5px;
+  color: var(--nero);
+  border: 2px dashed var(--white);
+  background-color: transparent;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+/* ------------ Common CSS ------------- */
+#vw_gardening_slider img, #our-project .vw_gardening_box .box-content, #pricing-plans .pricing-plans-features, #our-records .our-records-box, #testimonials .testimonials-box, #pricing-plans .pricing-plans-features_box, #our-records .our-records-content {
+  width: 100%;
+}
+.vw-fixed{
+  background-attachment: fixed;
+}
+.vw-scroll{
+  background-attachment: scroll;
+}
+#vw_gardening_slider a i, #vw_gardening_slider .read-more span, #our-records .our-records-content, #working-process .working-process-box i, #our-services .services-box, #pricing-plans .pricing-plans-box, #pricing-plans .pricing-plans-features_box, #why-choose-us .why-choose-us-content i, #our-blog .our-blog-content .our-blog-box, #our-partners .our-partners-box  {
+  background-color: var(--white);
+}
+.section-small_title {
+  font-size: 18px;
+  letter-spacing: 3px;
+  font-family: var(--common-font-st);
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.section-main_title {
+  font-size: 36px;
+  letter-spacing: 4px;
+}
+.feature-heading, .section-main_title, #our-products .product-price .add_to_cart_button, #our-products .product-price .add_to_cart_button {
+  font-family: var(--common-font-head);
+  font-weight: 700;
+}
+.content-para, #our-products .product-price ins, #our-products .product-price del {
+  line-height: 28px;
+  font-family: var(--common-font-para);
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.section-small_title:after, .section-small_title:before {
+  content: "";
+  width: 30px;
+  height: 2px;
+  margin-top: 15px;
+}
+.section-small_title:after{
+  margin-right: 9px;
+}
+.section-small_title:before {
+  margin-right: -40px;
+}
+.pos-abs, .section-small_title:before, .section-small_title:after, #about-us .section-small_title:after, #our-project .vw_gardening_box:before, #our-project .vw_gardening_box:after, #our-products .product-sale span, #testimonials .owl-carousel .owl-dots, #our-partners .owl-carousel .owl-dots {
+  position: absolute;
+}
+.borderd-first{
+  border:2px dashed var(--lightgray2);
+}
+.borderd-second, #vw_gardening_slider .slide_nav a:hover, #vw_gardening_slider .read-more:hover, #our-expertise .our-expertise-features:hover, #our-expertise .our-expertise-features:hover a, #our-services .owl-carousel .owl-dots .active, #working-process .working-process-box:hover, #our-project .project-tabs ul li .active, #pricing-plans .owl-carousel .owl-dots .active, #our-products .owl-carousel .owl-dots .active, #testimonials .owl-carousel .owl-dots .active, #our-team .owl-carousel .owl-dots .active, #our-blog .owl-carousel .owl-dots .active, #our-partners .owl-carousel .owl-dots .active {
+  border:2px dashed var(--green);
+}
+.color-blck, #our-products .added_to_cart {
+  color: var(--nero);
+}
+.borderd-wht, #testimonials .owl-carousel .owl-dots button {
+  border:2px dashed var(--white);
+}
+/* ------------ Our Expertise ------------- */
+#our-expertise .our-expertise-features {
+  padding: 25px;
+  margin-top: 40px;
+}
+#our-expertise h3, #our-services h3, #our-project .vw_gardening_box .title a, #pricing-plans .pricing-plans-content-box h2 sub{
+  font-size: 20px;
+}
+#our-expertise .our-expertise-features a {
+  border-radius: 40px;
+  padding: 14px 7px;
+  position: relative;
+  bottom: -52px;
+}
+#our-expertise .our-expertise-features a span {
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  border-radius: 40px;
+  background-color: var(--lightgray2);
+}
+#our-expertise .our-expertise-features:hover a span {
+  color: var(--white);
+}
+/* -------------- About Us ------------ */
+#about {
+  -vendor-animation-duration: 3s;
+  -vendor-animation-delay: 2s;
+  -vendor-animation-iteration-count: infinite;
+}
+#about-us .section-small_title:before {
+  display: none;
+}
+#about-us .section-small_title:after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  margin-top: 15px;
+  margin-right: 9px;
+}
+#about-us .about-feature-content {
+  padding-bottom: 30px;
+}
+#about-us .about-feature-content i {
+  padding: 12px 12px;
+  color: var(--white);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+#about-us .about-feature-content span {
+  padding: 7px;
+  border-radius: 50%;
+  display: inline-block;
+}
+#about-us .about-feature-content:hover i {
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+  -webkit-transform: rotateY(-360deg);
+  -moz-transform: rotateY(-360deg);
+  -o-transform: rotateY(-360deg);
+  -ms-transform: rotateY(-360deg);
+}
+#about-us .feature-heading {
+  font-size: 17px;
+  letter-spacing: 0px;
+}
+/* ---------- Our Services ------------- */
+.bpadding-40 {
+  padding-bottom: 40px;
+}
+#our-services .services-box {
+  padding: 20px;
+  position: relative;
+  right: 0px;
+  left: -35%;
+  -webkit-box-shadow: 0px 0px 57px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: 0px 0px 57px 0px rgba(0, 0, 0, 0.11);
+}
+#our-services .services-box h5:after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  display: block;
+  margin-top: 15px;
+}
+.fonts-14, #our-products .product-price del {
+  font-size: 14px;
+}
+#our-services .owl-carousel .owl-dots, #pricing-plans .owl-carousel .owl-dots, #our-products .owl-carousel .owl-dots, #testimonials .owl-carousel .owl-dots, #our-team .owl-carousel .owl-dots, #our-blog .owl-carousel .owl-dots, #our-partners .owl-carousel .owl-dots {
+  padding-top: 40px;
+  text-align: center;
+}
+#our-services .owl-carousel .owl-dots button {
+  width: 15px;
+  height: 15px;
+  border:2px dashed var(--nero);
+  background-color:transparent;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+/* ------------ Working Process ------------- */
+#working-process .working-process-head p, #working-process .working-process-head h2 {
+  color: var(--white);
+}
+#working-process .working-process-box {
+  padding: 15px;
+  max-width: 225px;
+  margin-top: 40px;
+}
+#working-process .working-process-box h3 {
+  font-size: 60px;
+  letter-spacing: 3px;
+  color: var(--white);
+}
+#working-process .working-process-box a {
+  font-size: 17px;
+  letter-spacing: 1px;
+  color: var(--white);
+}
+#working-process .working-process-box i {
+  width: 40px;
+  height: 40px;
+  padding: 12px 14px;
+  border-radius: 50%;
+}
+#working-process .working-process-box span {
+  background-color: var(--nero);
+  display: inline-block;
+  border-radius: 50%;
+  padding: 7px; 
+  position: relative;
+  right: -45px;
+  top: 20px;
+}
+#working-process .working-process-box:hover i {
+  transition: 1s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+  -webkit-transform: rotateY(-360deg);
+  -moz-transform: rotateY(-360deg);
+  -o-transform: rotateY(-360deg);
+  -ms-transform: rotateY(-360deg);
+  transform: rotateY(-360deg);
+}
+/* --------------- Our Projects ----------------- */
+#our-project .our-project-head {
+  padding-bottom: 30px;
+}
+#our-project .project-tabs {
+  padding-bottom: 15px;
+}
+#our-project .project-tabs ul {
+  margin: 0 auto;
+}
+#our-project .project-tabs ul li {
+  display: inline-block;
+}
+#our-project .project-tabs ul li a {
+  font-size: 15px;
+  color: var(--lightgray);
+}
+#our-project .project-image {
+  margin-top: 30px;
+}
+#our-project .project-tabs ul li .active {
+  border-radius: 28px;
+  padding: 14px 7px;
+  display:inline-block;
+  color: var(--black);
+}
+#our-project .project-tabs ul li .active span {
+  border-radius: 20px;
+}
+#our-project .project-tabs ul li a span {
+  padding: 10px 10px;
+}
+/* ------ Project Overlay ----------- */
+#our-project .vw_gardening_box{
+  overflow: hidden;
+  position: relative;
+}
+#our-project .vw_gardening_box:before, #our-project .vw_gardening_box:after{
+  content: "";
+  width: 0;
+  height: 0;
+  background: var(--green);
+  top: 5%;
+  right: 5%;
+  transition: all 0.3s ease-in-out;
+}
+#our-project .vw_gardening_box:after{
+  top: auto;
+  right: auto;
+  bottom: 5%;
+  left: 5%;
+}
+#our-project .vw_gardening_box:hover:before,
+#our-project .vw_gardening_box:hover:after{
+  width: 90%;
+  height: 90%;
+}
+#our-project .vw_gardening_box .box-content{
+  height: 100%;
+  padding: 15% 25px 20px 25px;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  z-index: 2;
+  transition: all 0.2s ease 0.3s;
+}
+#our-project .vw_gardening_box:hover .box-content{ opacity: 1; }
+#our-project .vw_gardening_box .box-content:before,
+#our-project .vw_gardening_box .box-content:after{
+  content: "";
+  width: 85%;
+  height: 85%;
+  border: 2px dashed transparent;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  z-index: -1;
+  transform: translateY(-50%) translateX(50%);
+  transition: all 0.3s ease 0s;
+}
+#our-project .vw_gardening_box .box-content:before{ width: 0; }
+#our-project .vw_gardening_box .box-content:after{ height: 0; }
+#our-project .vw_gardening_box:hover .box-content:before{
+  width: 85%;
+  border-top: 2px dashed var(--white);
+  border-bottom: 2px dashed var(--white);
+  transition-delay: 0.4s;
+}
+#our-project .vw_gardening_box:hover .box-content:after{
+  height: 85%;
+  border-right: 2px dashed var(--white);
+  border-left: 2px dashed var(--white);
+  transition-delay: 0.4s;
+}
+#our-project .vw_gardening_box .post{
+  font-style: italic;
+  color: var(--black);
+  margin-bottom: 10px;
+  font-family: var(--common-font-para);
+}
+/* ------------- Pricing Plan -------------- */
+#pricing-plans .pricing-plan-head p, #pricing-plans .pricing-plan-head h2, #why-choose-us .why-choose-us-content:hover p {
+  color: var(--white);
+}
+#pricing-plans .pricing-plans-content-box {
+  background-color: var(--white1);
+  padding: 25px;
+}
+#pricing-plans .pricing-plans-content-box p {
+  font-size: 18px;
+  letter-spacing: 7px;
+}
+#pricing-plans .pricing-plans-content-box h3 {
+  font-size: 50px;
+  letter-spacing: 1px;
+}
+#pricing-plans .pricing-plans-content-box a {
+  letter-spacing: 0px;
+}
+#pricing-plans .pricing-plans-features_box ul {
+  list-style-type: none;
+  margin-right: 0;
+}
+#pricing-plans .pricing-plans-features_box ul li {
+  line-height: 35px;
+}
+#pricing-plans .pricing-plans-features, #our-records .our-records-box, #testimonials .testimonials-box {
+  display: flex;
+  align-items: center;
+}
+#pricing-plans .pricing-plans-features_box {
+  position: relative;
+  left: -77px;
+  padding: 8px 15px;
+  -webkit-box-shadow: 0px 0px 57px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: 0px 0px 57px 0px rgba(0, 0, 0, 0.11);
+}
+.white-color, #working-process .working-process-box:hover i, #pricing-plans .pricing-plans-box:hover p, #pricing-plans .pricing-plans-box:hover h2, #pricing-plans .pricing-plans-box:hover a, #testimonials .testimonials-icons i:hover, #our-team .team-meta a i:hover {
+  color: var(--white);
+}
+#pricing-plans .owl-carousel .owl-dots button {
+  width: 15px;
+  height: 15px;
+  border:2px dashed var(--nero);
+  background-color:transparent;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+/* ------------- Our Products --------------- */
+#our-products {
+  padding-top: 0;
+}
+#our-products .product-sale span {
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: var(--white);
+  border-radius: 50%;
+  padding: 19px 0px;
+  background-color: var(--nero);
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  top: 17px;
+  right: 20px;
+}
+#our-products .product-price ins{
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  color: var(--lightgray);
+  text-decoration: none;
+}
+#our-products .product-price del {
+  letter-spacing: 0px;
+  color: var(--lightgray);
+}
+#our-products .product-price .add_to_cart_button {
+  letter-spacing: 1px;
+  color: #f7f7f7;
+  display: inline-block;
+  background-color: var(--nero);
+  padding: 7px 20px;
+  border-radius: 40px;
+  margin-top: 20px;
+}
+#our-products .added_to_cart {
+  letter-spacing: 1px;
+}
+#our-products .owl-carousel .owl-dots button {
+  width: 15px;
+  height: 15px;
+  border:2px dashed var(--nero);
+  background-color:transparent;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+#our-products .our-products-content:hover .onsale {
+  transition: 1s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+  -webkit-transform: rotateY(-360deg);
+  -moz-transform: rotateY(-360deg);
+  -o-transform: rotateY(-360deg);
+  -ms-transform: rotateY(-360deg);
+  transform: rotateY(-360deg);
+}
+/* -------------- Our Records ----------- */
+.product-records {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+#our-records .our-records-content {
+  padding: 20px;
+  position: relative;
+  right: -96px;
+  -webkit-box-shadow: 0px 0px 57px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: 0px 0px 57px 0px rgba(0, 0, 0, 0.11);
+}
+#our-records .our-records-content span {
+  font-size: 38px;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding-top: 20px;
+}
+/* --------------- Testimonials ----------- */
+#testimonials .testimonial_text {
+  color: var(--lightgray1);
+  font-style: italic;
+}
+#testimonials .testimonials-icons i {
+  width: 40px;
+  height: 40px;
+  border:2px solid var(--lightgray1);
+  border-radius: 50%;
+  color: var(--lightgray1);
+  padding: 10px 11px;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+#testimonials .testimonials-box {
+  padding-top: 30px;
+}
+#testimonials .client-box a {
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: var(--green);
+}
+#testimonials .client-box p {
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: var(--white);
+}
+#testimonials .test-title {
+  text-align: left;
+  padding-top: 10px;
+}
+#testimonials .testimonials-box img {
+  border-radius: 50%;
+}
+#testimonials .owl-carousel .owl-dots {
+  left: -16px;
+  bottom: 50%;
+}
+#testimonials .owl-carousel .owl-dots button {
+  width: 15px;
+  height: 15px;
+  background-color:transparent;
+  border-radius: 50%;
+  margin-top: 10px;
+  display: block;
+  margin-left: 10px;
+}
+.owl-carousel .owl-dots button {
+  outline: none;
+}
+/* ------------- Our Team ------------- */
+#our-team .team-contents img {
+  border-radius: 50%;
+}
+#our-team .team-contents .team_name {
+  padding-top: 15px;
+}
+#our-team .team-contents .team_name a {
+  font-size: 16px;
+}
+#our-team .teachers-desig {
+  letter-spacing: 0px;
+}
+#our-team .team-meta {
+  padding-top: 15px;
+}
+#our-team .team-meta a i {
+  width: 40px;
+  height: 40px;
+  border:2px solid var(--lightgray3);
+  border-radius: 50%;
+  padding: 10px 10px;
+  margin-left: 7px;
+  color: var(--lightgray3);
+}
+#our-team .team-contents:hover a {
+  color: var(--green);
+}
+#our-team .owl-carousel .owl-dots button {
+  width: 15px;
+  height: 15px;
+  border:2px dashed var(--nero);
+  background-color:transparent;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+/* ---------- Why Choose Us ------------- */
+#why-choose-us .why-choose-us-content {
+  border:2px dashed var(--lightgray3);
+  padding:15px 15px 15px ;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+#why-choose-us .why-choose-us-content span {
+  border-radius: 50%;
+  padding: 7px;
+  display: inline-block;
+  position: relative;
+  right: -45px;
+  top: 24px;
+} 
+#why-choose-us .why-choose-us-content i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 13px 13px;
+}
+#why-choose-us .why-choose-us-content h4 a {
+  font-size: 18px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  color: var(--white);
+}
+#why-choose-us .why-choose-us-content p {
+  color: var(--lightgray1);
+}
+#why-choose-us .why-choose-us-content:hover i {
+  transition: 1s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+  -webkit-transform: rotateY(-360deg);
+  -moz-transform: rotateY(-360deg);
+  -o-transform: rotateY(-360deg);
+  -ms-transform: rotateY(-360deg);
+  transform: rotateY(-360deg);
+}
+/* ------------- Our Blog ------------- */
+#our-blog .our-blog-content h5 a {
+  font-size: 18px;
+  letter-spacing: 0px;
+}
+#our-blog .our-blog-content .blog_text {
+  line-height: 24px;
+  color: var(--lightgray);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#our-blog .our-blog-content .our-blog-box {
+  padding: 10px;
+  position: relative;
+  left: -78px;
+  width: 275px;
+  margin-top: 26px;
+  -webkit-box-shadow: 0px 0px 57px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: 0px 0px 57px 0px rgba(0, 0, 0, 0.11);
+}
+#our-blog .blog-date {
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: var(--white);
+  display: inline-block;
+  background-color: var(--nero);
+  padding: 10px;
+  max-width: 77px;
+  left: 20px;
+  top: 20px;
+}
+#our-blog .owl-carousel .owl-dots button {
+  width: 15px;
+  height: 15px;
+  border:2px dashed var(--nero);
+  background-color:transparent;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+/* ------------Our Partners ------------ */
+#our-partners .our-partners-box {
+  position: relative;
+  width: 116%;
+  z-index: 99;
+  top: 25px;
+  -webkit-box-shadow: 0px 0px 57px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: 0px 0px 57px 0px rgba(0, 0, 0, 0.11);
+}
+#our-partners .our-partners-box img {
+  padding: 26px 28px;
+}
+#our-partners .owl-carousel .owl-dots {
+  left: 8px;
+  top: 14%;
+}
+#our-partners .owl-carousel .owl-dots button {
+  width: 15px;
+  height: 15px;
+  border:2px dashed #111;
+  background-color:transparent;
+  border-radius: 50%;
+  margin-top: 10px;
+  display: block;
+}
+span.our-partners-dots, span.our-blog, span.our-team, span.testimonials, span.products, span.services, span.testimonials-dots, span.vw_gardening_slider, span.pricing-plans{
+  display: none;
+}
+section#working-process, section#pricing-plans, section#testimonials, section#why-choose-us, section#vw_gardening_slider{
+  background: var(--black);
+}
+/* ----------- Common CSS ------------- */
+.our_projects_outer, .our_testimonial_outer, .our_team_outer, .all-services{
+  margin-top: 25px;
+}
+.our_projects_outer h2 a, .our_testimonial_outer h2 a, .our_team_outer h2 a, .services-box h2 a, #single-teacher h5 {
+  font-family: 'Krub', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+.short_text, .our_team_outer .tdesig, .single-page-content, .single-courses-meta p, #single-teacher .email, #single-teacher .phone, #testimonial_single .student-desig, .contact-box .contact-head p, .postbox-content .post-text, .postbox-content .post-text, .single-post-content p, .outer_dpage p, .widget_recent_entries span.post-date, .woocommerce .woocommerce-MyAccount-navigation ul li a  {
+  letter-spacing: 1px;
+  line-height: 27px;
+  font-family: "Roboto";
+}
+.our_testimonial_outer img, .our_team_outer img, .our_team_outer .att_socialbox i, #single-teacher .social-profiles i, #testimonial_single .social-profiles i, .metabox img, .authordetails ul li a i, .authordetails img {
+  border-radius: 50%;
+}
+#comment-nav-above .nav-links, #comments, #comments .comment-metadata, .widget_recent_entries span.post-date, .navigation span, .navigation a, .post_ctg span {
+  float: right;
+}
+#single-teacher .social-profiles i, #testimonial_single .social-profiles i, .meta_post span i, .contact-color-bg form textarea, .contact-color-bg input[type='text'], .contact-color-bg input[type='email'], .authordetails ul li a i, .navigation span, .navigation a {
+  margin-left: 10px;
+}
+/* ----------- Projects Shortcode ------------- */
+.all-projects #vw_comments, .all-services #vw_comments {
+  display: none;
+}
+/* -------------- Testimonial Shortcode ----------- */
+.our_testimonial_outer .testimonial_inner {
+  border: 2px dashed #73b21a;
+  padding: 30px;
+}
+.our_testimonial_outer .tdesig {
+  letter-spacing: 1px;
+}
+/* ----------- Team Shortcode ------------- */
+.our_team_outer .att_socialbox i, #single-teacher .social-profiles i, #testimonial_single .social-profiles i, .authordetails ul li a i {
+  width: 40px;
+  height: 40px;
+}
+.our_team_outer .att_socialbox i {
+  border: 2px solid #929498;
+  padding: 11px 12px;
+  margin-left: 7px;
+  color: #929498;
+}
+/* ----------- Services Shortcode -------------- */
+.services-box .learn-more, .our_testimonial_outer .tdesig, .page-header h1, .entry-title, .contact-box .wpcf7 input[type="text"]::placeholder, .contact-box .wpcf7 input[type="email"]::placeholder, .contact-box .wpcf7 textarea::placeholder, .contact-box .contac_form input[type="submit"], .contact-page-details span, .contact-box .contact-head h3, .main_title h1, #comments h2#reply-title, #vw_gardening_sidebar h3, .woocommerce h1,.woocommerce h2,.woocommerce h3 {
+  font-family: 'Krub', sans-serif;
+  font-weight: 700;
+}
+/* ----------- Single Pages -------------- */
+#single-teacher .social-profiles i, #testimonial_single .social-profiles i {
+  color: #7f7f7f;
+  padding: 10px 10px;
+  border: 2px dashed #7f7f7f;
+  margin-bottom: 10px;
+}
+#single-teacher .email, #single-teacher .phone, #testimonial_single .student-desig {
+  font-size: 17px;
+  letter-spacing: 0px;
+  color: #111111;
+}
+#single-teacher h5 {
+  padding-top: 28px;
+}
+.related-posts a.post-page-title.pt-2 {
+  font-size: 16px;
+  font-weight: 600;
+}
+/* ------------------Single Post ----------------- */
+.page-header h1, .entry-title, .posttitle a, .contact-box .contact-head h3, #vw_gardening_sidebar h3, #comments .reply a {
+  color: #222222;
+}
+#single_post .postbox .postbox-content {
+  position: static;
+}
+.posttitle a {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.single-post-content table td, .contac_form h3, .contact-color-bg, .contact-box .contact-icon, .contact-box .contact-head, .postbox h3, #vw_gardening_sidebar table, #vw_gardening_sidebar th, #vw_gardening_sidebar td, #vw_gardening_sidebar form, #vw_gardening_sidebar h3, .share_icon i, h2.woocommerce-loop-product__title, .woocommerce ul.products li.product .price, .woocommerce a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart, .woocommerce-loop-category__title, .outer_dpage table, .outer_dpage table th {
+  text-align: center;
+}
+.single-post-content .wp-audio-shortcode {
+  margin-bottom: 50px;
+}
+.author_links a {
+  color: #111;
+}
+#vw_gardening_sidebar .widget_recent_entries a {
+  font-size: 13px;
+}
+.single .post-navigation a:hover .post-title, .single .post-navigation a:focus .post-title {
+  color: #73b11b;
+}
+/*------------------ Single Testimonials -----------------*/
+#testimonial_single blockquote, .contac_form label, .inner_banner img, .title-box img, .blogimg-full img, #comment-nav-above .nav-links, #comments, #vw_gardening_sidebar input[type="search"], #vw_gardening_sidebar label, #vw_gardening_sidebar input[type="submit"], .widget_recent_entries span.post-date, .u-column1.col-1.woocommerce-Address, .u-column2.col-2.woocommerce-Address, span.woocommerce-input-wrapper {
+  width: 100%;
+}
+#testimonial_single blockquote {
+  padding: 1.25em 40px;
+  color: #383838;
+  background: #ffffff;
+  border: 1px solid #ddd;
+}
+.meta_post span i {
+  padding: 7px;
+}
+.services_inner h4, .services_inner .short_text, .meta_post span i, #comments input[type="submit"].submit, .share_icon i, .navigation .current {
+  color: #ffffff;
+}
+.woocommerce span.onsale, .meta_post span i, a.page-numbers, span.page-numbers.current, .woocommerce button.button.alt, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, #vw_gardening_sidebar input[type="submit"]{
+  background-color: #73b21a;
+}
+/*------------------ Contact Page -----------------*/
+.contact-page-details {
+  padding-bottom: 30px;
+}
+.contac_form input[type='text'], .contac_form input[type='email'], .contac_form input[type='url'], .contac_form input[type='password'], .contac_form input[type='search'], .contac_form input[type='number'], .contac_form input[type='tel'], .contac_form input[type='range'], .contac_form input[type='date'], .contac_form input[type='month'], .contac_form input[type='week'], .contac_form input[type='time'], .contac_form input[type='datetime'], .contac_form input[type='datetime-local'], .contac_form input[type='color'], .contac_form select, .contac_form textarea, .contac_form .wpcf7 .wpcf7-form-control-wrap[class*="file-"] {
+  color: #2f3357;
+  border-radius: 0px;
+  box-shadow: none;
+  border:1px solid #cccccc;
+  background-color: transparent;
+}
+.contact-color-bg form textarea, .contact-color-bg input[type='text'], .contact-color-bg input[type='email'] {
+  border-radius: 40px;
+  padding-right: 20px;
+  padding-top: 23px;
+}
+.contact-box .contac_form input[type="submit"] {
+  border-radius: 40px;
+  padding: 12px 20px;
+  background: #73b11b;
+}
+.contact-box .contac_form input[type="submit"], .main_title, #comments input[type="submit"].submit {
+  margin-top: 20px;
+}
+.contact-address, .contact-email, .contact-phone {
+  margin: 7px 0;
+}
+.contact-page-details {
+  -webkit-box-shadow: 0px 0px 57px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: 0px 0px 57px 0px rgba(0, 0, 0, 0.11);
+  margin-bottom: 30px;
+}
+.contact-page-details, .widget_recent_entries span.post-date, .woocommerce table.shop_table th, #comments .comment-content {
+  text-align: right;
+}
+.contact-page-details .contact-address, .contact-page-details .contact-email, .contact-page-details .contact-phone {
+  padding: 11px;
+}
+.contact-page-details span, .woocommerce .woocommerce-MyAccount-navigation ul li a {
+  font-weight: normal;
+  color: #1f1e1e;
+  font-size: 16px;
+}
+.contact-page-details .inner-cont i {
+  font-size: 35px;
+  padding: 14px 0;
+}
+.contact-box .contact-head {
+  padding-bottom: 30px;
+}
+.main_title h1{
+  padding: 0;
+  margin-bottom: 22px;
+  font-size: 36px;
+  color: #2d3b3e;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+/* --------- Blog Page ------- */
+.content_boxes, .postbox {
+  padding: 0;
+  border: none;
+}
+.postbox {
+  margin-bottom: 39px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 0px 57px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: 0px 0px 57px 0px rgba(0, 0, 0, 0.11);
+  padding: 20px;
+}
+.postbox h2{
+  margin:0 0 5px; 
+  font-weight:bold;
+}
+.metabox {
+  color: #000;
+  margin: 10px 0;
+  margin-right: -20px;
+}
+.metabox .entry-date{
+  margin: 0 0 0 13px;
+  position: relative;
+}
+.single-post .metabox .entry-date a {
+  padding-left: 18px;
+}
+.single-post .metabox .entry-date i {
+  position: absolute;
+  left: 0;
+  top: 3px;
+}
+.metabox .entry-author{
+  padding: 0 20px 0 0;
+  margin: 0 0 0 20px;
+}
+.metabox .entry-comments{
+  padding: 0 20px 0 0;
+}
+#comment-nav-above .nav-links {
+  margin-bottom: 17px;
+}
+#vw_gardening_sidebar span.comment-author-link {
+  margin-right: 14px;
+}
+.authordetails {
+  padding: 30px 0;
+}
+.authordetails .author_links, #comments input[type="submit"].submit, #vw_gardening_sidebar caption, #vw_gardening_sidebar input[type="submit"], .title-box h1, .navigation span.meta-nav, .inner_layout .woocommerce #respond input#submit, .inner_layout .woocommerce a.button, .inner_layout .woocommerce button.button, .inner_layout .woocommerce input.button, .inner_layout .woocommerce #respond input#submit.alt, .inner_layout .woocommerce a.button.alt, .inner_layout .woocommerce button.button.alt, .inner_layout .woocommerce input.button.alt, .woocommerce .woocommerce-cart-form__cart-item .product-name a {
+  font-weight: bold;
+}
+.authordetails .author_links {
+  padding-right: 17%;
+  margin-bottom: 7px;
+}
+.authordetails .b-content {
+  color: #90939c;
+  font-style: italic;
+}
+.woocommerce .woocommerce-MyAccount-navigation ul, .authordetails ul {
+  list-style-type: none;
+}
+.authordetails ul {
+  margin-right: 18%;
+  margin-top: 10px;
+  position: relative;
+}
+.authordetails ul li {
+  display: inline;
+}
+.authordetails ul li a i {
+  background-color: #000;
+  padding: 15px 15px 9px 15px;
+  color: white;
+}
+/* ----------------------- POST---------------------- */
+a.page-numbers, span.page-numbers.current {
+  padding: 10px !important;
+  color: #ffffff !important;
+}
+.woocommerce div.product form.cart .variations select, .navigation span.page-numbers.current{
+  background-color: #ffffff; 
+}
+.navigation span.page-numbers.current, a.page-numbers, span.page-numbers.current, #vw_gardening_sidebar .widget{
+  border: 1px solid #73b21a;
+  color: #000000 !important;
+}
+.bradcrumbs{
+  padding: 30px 0;
+}
+.bradcrumbs a{
+  background:#f1f1f1; 
+  color:#000;
+  padding:5px 15px;
+  margin-left:5px;
+}
+.bradcrumbs span{
+  background: #dddddd; 
+  color: #000;
+  padding: 5px 15px;
+}
+/*------------------ Comments BOX ------------------*/
+#comments{
+  margin-top: 10px;
+}
+#comments h2.comments-title, #comments h3.comment-reply-title{
+  font-size: 20px; 
+  font-weight: bold;
+  clear: both;
+}
+#comments input[type="text"], #comments input[type="email"], #comments textarea {
+  padding: 12px 10px; 
+  font-size: 18px;
+}
+#comments input[type="submit"].submit, .inner_layout .woocommerce #respond input#submit, .inner_layout .woocommerce a.button, .inner_layout .woocommerce button.button, .inner_layout .woocommerce input.button, .inner_layout .woocommerce #respond input#submit.alt, .inner_layout .woocommerce a.button.alt, .inner_layout .woocommerce button.button.alt, .inner_layout .woocommerce input.button.alt{
+  text-transform: uppercase;
+}
+#comments input[type="submit"].submit {
+  padding: 10px 20px;
+  border-top: none;
+  border-radius: 40px;
+  background: #73b11b;
+}
+#comments a time{
+  color: #000;
+  font-weight:bold;
+  font-size:12px;
+}
+#comments .reply {
+  float: none !important;
+  margin-bottom: 30px;
+  text-align: left;
+}
+#comments .reply a {
+  font-size: 16px;
+  letter-spacing: 0px;
+  font-family: "PT Sans";
+  font-weight: 700;
+}
+.post-navigation a:hover{
+  color: #88d055;
+}
+#comments .comment-metadata{
+  width: 90%;
+  padding: 1% 0 0 0;
+}
+#comments .comment-content{
+  width: 90%;
+  margin-right:7%;
+}
+#comments .comment-author{  
+  margin-bottom: 1em;
+}
+#comments h2#reply-title {
+  display: inline-table;
+}
+#comments .comment-author.vcard img {
+  padding: 2px;
+}
+/*--------------- Sidebar -----------------*/
+#vw_gardening_sidebar td#prev a, #vw_gardening_sidebar caption, #vw_gardening_sidebar td, #vw_gardening_sidebar th, #vw_gardening_sidebar select {
+  color: #6c6c6c;
+}
+#vw_gardening_sidebar caption {
+  font-size: 20px;
+}
+#vw_gardening_sidebar table,#vw_gardening_sidebar th,#vw_gardening_sidebar td, #vw_gardening_sidebar select, #vw_gardening_sidebar input[type="search"] {
+  border: 1px solid #e1e1e1;
+}
+#vw_gardening_sidebar td, #vw_gardening_sidebar th {
+  padding: 5px;
+}
+#vw_gardening_sidebar select {
+  padding: 10px 5px;
+  background: transparent;
+}
+#vw_gardening_sidebar h3 {
+  font-size: 24px;
+  padding-bottom: 15px;
+  margin-bottom: 11px;
+  border-bottom: 1px solid #e7e7e7;
+}
+#vw_gardening_sidebar input[type="search"] {
+  padding:10px 10px;
+  font-size:15px;
+  margin-bottom: 10px;
+  color: #6c6c6c;
+}
+#vw_gardening_sidebar label{
+  margin-bottom: 0;
+}
+#vw_gardening_sidebar input[type="submit"]{
+  color:#fff;
+  padding:10px 0;
+  font-size:12px;
+  letter-spacing: 2px;
+}
+#vw_gardening_sidebar .widget {
+  padding: 20px;
+  margin-bottom: 50px;
+}
+#vw_gardening_sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+}
+#vw_gardening_sidebar ul li{
+  font-weight: 600;
+  color: #343434;
+  font-family: Poppins,sans-serif;
+  font-size: 15px;
+  border-bottom: 1px solid #e1e1e1;
+  padding: 10px 0;
+}
+#vw_gardening_sidebar ul li:last-child { 
+  border:none;
+}
+#vw_gardening_sidebar ul li a {
+  font-weight: 600;
+  color: #343434;
+  font-family: Poppins,sans-serif;
+  font-size: 15px;
+}
+/*------------- Page -----------------*/
+.title-box{
+  color:#fff;
+  text-transform:uppercase;  
+  font-weight:bold;
+  text-align:center;
+  margin-bottom:25px;
+}
+.title-box img{
+  width:100%;
+}
+.above_title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 10%;
+}
+.read-moresec{
+  margin:2% 0;
+}
+.middle-content, #comments h2.comments-title, .our_testimonial_outer .tdesig {
+  padding-bottom: 20px;
+}
+/*---------------- Contact Us Widget ----------------*/
+.widget_recent_entries li a {
+  font-size: 14px;
+}
+.widget_recent_entries span.post-date {
+  margin-bottom: 11px;
+  font-size: 14px;
+  color: #aca9a9;
+}
+/*---------------- Pagination ----------------*/
+.navigation {
+  font-size:14px; 
+  font-weight:bold;
+  margin: 10px 0;
+}
+.navigation span, .navigation a {
+  display: block;
+  padding: 0;
+  margin-bottom: 10px;
+  color: #5b5b5b;
+  -webkit-transition: background .15s ease-in-out;
+  -moz-transition: background .15s ease-in-out;
+  -ms-transition: background .15s ease-in-out;
+  -o-transition: background .15s ease-in-out;
+  transition: background .15s ease-in-out;
+  font-weight: normal;
+}
+.navigation .nav-next {
+  float: left;
+}
+.navigation .current {
+  background: #333333;
+  font-weight: normal;
+}
+/* ------------- Category --------------------*/
+ul.post-categories {
+  list-style: none;
+  margin: 0;
+}
+ul.post-categories li {
+  display: inline-block;
+}
+ul.post-categories li:after {
+  content: ' ,';
+}
+ul.post-categories li:last-child:after {
+  content: '';
+}
+ul.post-categories a {
+  color: #333333;
+}
+.post_ctg span {
+  margin-left: 7px;
+}
+/*-------------- Main Title ---------------*/
+.share_icon i {
+  padding: 10px 8px 10px 10px;
+  margin: 0 0;
+  background-color: #333333;
+  width: 36px;
+  margin: 0 4px;
+}
+.share_icon i.fab.fa-facebook-f{
+  background-color: #3c5a99;
+}
+.share_icon i.fab.fa-linkedin-in{
+  background-color: #007bb5;
+}
+.share_icon i.fab.fa-google-plus-g{
+  background-color: #da4835;
+}
+.share_icon i.fab.fa-twitter{
+  background-color: #55acee;
+}
+/*-------------- Woocommerce ---------------*/
+.woocommerce .summary h1 {
+  font-size: 28px;
+}
+.woocommerce div.product form.cart div.quantity {
+  margin-left: 20px;
+}
+.woocommerce .quantity input{
+  padding: 5px 0px;
+}
+#single-product-page button.single_add_to_cart_button.button.alt {
+  background: #73b11b;
+}
+.woocommerce button.button.alt, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+  border-radius: 0;
+  padding: 10px 14px !important;
+  color: #ffffff !important;
+}
+.contact-page-details .inner-cont i, .woocommerce div.product p.price, .woocommerce div.product span.price, .woocommerce ul.products li.product .price, .social_widget a i:hover{
+  color: #73b21a;
+}
+#contentwoocom {
+  padding: 20px 15px;
+}
+.woocommerce a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
+  margin: 0 auto;
+  display: table;
+  margin-bottom: 20px;
+  background: #73b11b;
+}
+.inner_layout .woocommerce #respond input#submit, .inner_layout .woocommerce a.button, .inner_layout .woocommerce button.button, .inner_layout .woocommerce input.button, .inner_layout .woocommerce #respond input#submit.alt, .inner_layout .woocommerce a.button.alt, .inner_layout .woocommerce button.button.alt, .inner_layout .woocommerce input.button.alt {
+  background: #73b11b;
+  color: #121212;
+  padding: 17px;
+  border-radius: 0;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.page-template-default .woocommerce button.button, .page-template-default .woocommerce button.button.alt{
+  background: #73b11b;
+}
+li.product {
+  border: 1px solid #ddd;
+  padding-bottom: 17px;
+}
+.woocommerce #customer_login .col-1, .woocommerce #customer_login .col-2, .u-column1.col-1.woocommerce-Address, .u-column2.col-2.woocommerce-Address, .woocommerce .col-1, .woocommerce .col-2 {
+  max-width: 100%;
+}
+input#password, input#reg_password {
+  padding: 10px;
+}
+.woocommerce a.added_to_cart {
+  padding: 0 .5em .5em;
+  display: inline-block;
+}
+.woocommerce-cart table.cart td.actions .coupon .input-text {
+  width: 53%;
+}
+.woocommerce form .form-row.woocommerce-invalid label {
+  color: #8fa3aa;
+}
+.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover{
+  background: #111111 !important;
+  color: #fff !important; 
+}
+.woocommerce div.product div.images img{
+  display: block;
+  width: auto; 
+  height: auto;
+  box-shadow: none;
+}
+#primary {
+  padding-top: 30px;
+}
+/* ----------- Unit Testing ------------- */
+.woocommerce ul.cart_list li img, .woocommerce ul.product_list_widget li img {
+  width: 65px !important;
+}
+h4.posttitle a:hover {
+  color: #666;
+}
+.demo {
+  -webkit-animation-name: demo;
+  animation-name: demo;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes demo {
+  0% {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  }
+  }
+  @keyframes demo {
+  0% {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  }
+} 
+/*--------------media sections--------------*/
+@media screen and (max-width: 1024px){
+  /*Common Css*/
+  .side-navigation ul ul li, .home .side-navigation ul, .side-navigation li.current_page_item{
+    border-bottom: none;
+  }
+  .home.page-template .header-wrap {
+    position: unset;
+    padding-top: 10px;
+  }
+  amp-sidebar#sidebar1{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9999999;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: .5s;
+    background-color: #111111;
+    padding-top: 60px;
+  }
+  .headerbar,.side-navigation,.side-navigation li,.side-navigation ul li a,.side-navigation ul ul li,.side-navigation li.current_page_item{
+    display: block;
+  }
+  .headerbar {
+    width: 30px;
+    z-index: 999999;
+    left: 0px;
+    cursor: pointer;
+    margin: 5px auto 0px 0px;
+  }
+  .main-header .side-navigation {
+    display: none
+  }
+  .side-navigation ul{
+    padding-right: 0px;
+    margin: 0px;
+  }
+  .side-navigation li{
+    border-top: 1px #303030 solid;
+    display: block;
+    width: 18rem;
+    padding: 5px;
+  }
+  .side-navigation ul li a {
+    color: #ffffff;
+    padding: 5px 10px;
+    text-align: right;
+    font-size:15px;
+  }
+  .side-navigation ul li ul, .side-navigation ul li ul ul {
+    display: block !important;
+  }
+  .side-navigation ul ul,.side-navigation ul ul li {
+    background: var(--transparent) !important;
+  }
+  .side-navigation ul ul {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+  }
+  .side-navigation li.current_page_item a{
+    color: rgb(115, 178, 26);
+  }
+  .side-navigation ul.sub-menu li a:before{
+    content: none;
+  }
+  .slider-box {
+    max-width: 81%;
+  }
+  #vw_gardening_slider h1 {
+    font-size: 32px;
+  }
+  #topbar-social-search .socialbox {
+    text-align: center;
+  }
+  #working-process .working-process-box {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width:991px){
+  .main-header-box .header-button a span {
+    font-size: 12px;
+  }
+  #our-partners .our-partners-box img {
+    padding: 7px 28px;
+  }
+  #our-services .services-box {
+    right: -150px;
+  }
+  #working-process .working-process-box {
+    padding: 10px;
+  }
+  #working-process .working-process-box span {
+    right: -34px;
+  }
+  #pricing-plans .pricing-plans-features_box {
+    padding: 0px 10px 0px 10px;
+    left: -54px;
+  }
+  #our-records .our-records-content {
+    position: unset;
+  }
+  #testimonials .owl-carousel .owl-dots {
+    bottom: 10%;
+  }
+  #why-choose-us .why-choose-us-content {
+    max-width: 421px;
+  }
+  #our-blog .blog-date {
+    right: 25%;
+  }
+  #our-blog .our-blog-content .our-blog-box {
+    right: 0px;
+  }
+  #our-blog .our-blog-content .our-blog-box {
+    width: 330px;
+    padding: 30px 10px;
+    margin-top: 44px;
+  }
+  #our-partners {
+    padding-top: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width:991px) {
+  #pricing-plans .pricing-plans-features_box, #our-records .our-records-content, #our-partners .our-partners-box  {
+    position: unset;
+  }
+  #pricing-plans .pricing-plans-features_box, #our-partners .our-partners-box {
+    width: 100%;
+  }
+  #our-products .product-sale span {
+    right: 15%;
+  }
+  #our-records .our-records-content, .copyright .socialbox, .our-records-image {
+    text-align: center;
+  }
+  #why-choose-us .why-choose-us-content {
+    max-width: 300px;
+  }
+  #our-partners .our-partners-box img {
+    padding: 6px 28px;
+  }
+  #our-partners .owl-carousel .owl-dots {
+    padding-top: 10px;
+  }
+  #our-partners .our-partners-box, .copyright .socialbox {
+    padding-top: 30px;
+  }
+  #our-partners {
+    padding-top: 0;
+  }
+  #our-records .our-records-content p {
+    margin-bottom: 0;
+  }
+  .product-records {
+    padding-bottom: 25px;
+  }
+  #topbar-social-search .topbar-search span {
+    padding: 7px 10px;
+  }
+}
+@media screen and (max-width:576px) {
+  .metabox {
+    margin-right: 0px;
+  }
+  .main_title h1 {
+    font-size: 22px;
+  }
+  #topbar-social-search .topbar-text, .slider-box, section, #vw_gardening_slider a i, #why-choose-us .why-choose-us-content, .copyright .socialbox, .contact-box .inner-cont, .copyright, #pricing-plans .pricing-plans-content-box, #our-partners .our-partners-image {
+    text-align: center;
+  }
+  .slider-box {
+    max-width: 100%;
+    top: 40%;
+  }
+  #vw_gardening_slider h1, .about-content p, #vw_gardening_slider a i {
+    font-size: 14px;
+  }
+  #vw_gardening_slider ol.carousel-indicators {
+    left: -20px;
+  }
+  #vw_gardening_slider .carousel-prev-button {
+    left: 48%;
+    bottom: 5%;
+  }
+  #vw_gardening_slider .carousel-next-button {
+    left: 34%;
+    bottom: 5%;
+  }
+  #vw_gardening_slider p{
+    margin: 0 0 9px 0;
+    font-size: 16px;
+  }
+  #vw_gardening_slider .slide_nav a {
+    padding: 4px;
+    width: 41px;
+    height: 41px;
+  }
+  #vw_gardening_slider a i{
+    padding: 8px 7px;
+    width: 30px;  
+    height: 30px;
+  }
+  #vw_gardening_slider a.theme_button, #vw_gardening_slider p{
+    display: none;
+  }
+  .woocommerce-cart table.cart td.actions .coupon .input-text {
+    width: 37%;
+  }
+  #testimonials .testimonial_box {
+    padding: 20px 20px 40px 20px;
+  }
+  section{
+    padding: 20px 0;
+    background-size: cover;
+  }
+  .section-main_title {
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+  blockquote {
+    width: 100%;
+  }
+  .media-small {
+    padding-right: 10px !important;
+  }
+  .above_title {
+    margin-top: 2%;
+  }
+  #vw_gardening_header .search-form label {
+    width: 53%;
+  }
+  .post-navigation .nav-previous, .post-navigation .nav-next, #our-partners .our-partners-box, #pricing-plans .pricing-plans-features_box, #our-blog .our-blog-content .our-blog-box {
+    width: 100%;
+  }
+  .home .header-wrap, .sticky, #our-partners .our-partners-box, #our-services .services-box, #testimonials .owl-carousel .owl-dots, #pricing-plans .pricing-plans-features_box, #our-records .our-records-content, #why-choose-us .why-choose-us-content span, #our-blog .our-blog-content .our-blog-box, #our-partners .owl-carousel .owl-dots {
+    position: unset;
+  }
+  .search_popup input.search-submit {
+    padding:3px 20px;
+    margin-top: 5px; 
+  }
+  #our-partners .our-partners-box, #testimonials .owl-carousel .owl-dots, #why-choose-us .why-choose-us-content h5, #vw_gardening_footer .copyright p, #our-partners .our-partners-image {
+    padding-top: 20px;
+  }
+  #our-services .services-box h3:after, #working-process .working-process-box {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #our-records .our-records-content {
+    margin-top: 20px;
+  }
+  #testimonials .owl-carousel .owl-dots button, #our-partners .owl-carousel .owl-dots button {
+    display: unset;
+  }
+  #our-partners .owl-carousel .owl-dots {
+    padding-bottom: 20px;
+  }
+  .serach_outer {
+    padding-right: 20px;
+  }
+  #our-partners .owl-carousel .owl-dots button {
+    margin-left: 10px;
+  }
+  #our-services .owl-carousel .owl-dots  {
+    padding-top: 10px;
+  }
+  .product-records {
+    padding-bottom: 0;
+  }
+  #our-partners .our-partners-box img, #our-partners .owl-carousel .owl-dots {
+    padding-top: 0px;
+  }
+  #topbar-social-search .topbar-search span {
+    padding: 7px 10px;
+  }
+}
+.owl-carousel.owl-loaded.owl-drag {
+  direction: ltr;
+}

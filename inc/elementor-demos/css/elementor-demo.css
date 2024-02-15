@@ -1,0 +1,299 @@
+/* -------- Slider ----------- */
+#vw-slider-new .elementor-column-wrap{
+	padding: 0 !important;
+}
+#vw-slider-new .vw_gardening_slider{
+	padding:0 !important;
+}
+.expert-head{
+	padding-bottom: 0 !important;
+}
+.section-small-title p{
+	font-size: 18px;
+	font-family: 'Playfair Display SC', serif !important;
+	color: #9e9d9d;
+}
+#about-us .about-small-title span{
+	font-size: 18px;
+	font-family: 'Playfair Display SC', serif !important;
+	color: #9e9d9d;
+}
+.section-small-title p:after, .section-small-title p:before {
+    content: "";
+    width: 30px;
+    height: 2px;
+    margin-top: 15px;
+	background-color: #73b21a;
+	display: inline-block;
+}
+.section-small-title p:before{
+	position: relative;
+    left: -10px;
+    top: -3px;
+}
+.section-small-title p:after{
+	position: relative;
+    right: -10px;
+    top: -3px;
+}
+#our-expertise .elementor-widget-wrap{
+	padding: 25px;
+    margin-bottom: 30px;
+	border: 2px dashed #d7d7d7;
+}
+#our-expertise .elementor-widget-wrap:hover{
+	border-color: #73b21a;
+}
+#our-expertise .elementor-widget-wrap:hover .elementor-button{
+	background-color: #73b21a;
+	color: #fff;
+}
+#our-expertise .elementor-widget-wrap:hover .elementor-button-wrapper{
+	border-color: #73b21a;
+}
+#our-expertise .elementor-button-wrapper{
+	border-radius: 40px;
+    padding: 8px 7px;
+    position: relative;
+    bottom: -52px;
+	border: 2px dashed #d7d7d7;
+	display: inline-block;
+}
+#our-expertise h3{
+	letter-spacing: 1px;
+}
+/* -------- About Us --------- */
+#about-us .elementor-icon-box-wrapper:hover i
+{
+  transition: 1s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+  -webkit-transform: rotateY(360deg);
+  -moz-transform: rotateY(360deg);
+  -o-transform: rotateY(360deg);
+  -ms-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}
+
+#about-us .elementor-widget-wrap{
+	max-width: 580px;
+}
+#about-us .about-small-title{
+	margin-bottom: 5px !important;
+}
+#about-us .about-small-title p{
+	font-family: 'Playfair Display SC', serif;
+	font-size: 18px;
+}
+#about-us .about-small-title p:after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    margin-top: 15px;
+    margin-left: 9px;
+	background-color: #73b21a;
+	display: inline-block;
+}
+#about-us .elementor-text-editor p{
+    font-family: 'Roboto';
+    letter-spacing: 1px;
+    font-weight: 500;
+	color: #9e9d9d;
+}
+section h3{
+    font-size: 36px;
+    letter-spacing: 4px;
+	font-family: 'Krub', sans-serif;
+}
+#about-us .elementor-icon i {
+    padding: 12px 12px;
+    background-color: #73b21a;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+	font-size: 16px;
+}
+#about-us .elementor-icon{
+	padding: 7px;
+    border-radius: 50%;
+    display: inline-block;
+	border: 2px dashed #73b21a;
+}
+#about-us .elementor-icon-box-wrapper{
+	align-items:center;
+}
+/* --------Product Section -------- */
+#our-products-new .product_type_simple{
+	letter-spacing: 1px;
+    color: #f7f7f7;
+    display: inline-block;
+    background-color: #222222;
+    padding: 7px 20px !important;
+    border-radius: 40px;
+    margin-top: 20px;
+	font-weight: 600;
+}
+#our-products-new span.onsale {
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #fff;
+    border-radius: 50%;
+    padding: 19px 0px;
+    background-color: #222;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    top: 17px;
+    left: 20px;
+	transform: none !important;
+	line-height: 30px !important;
+}
+#our-products-new li ins {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    color: #6e6e6e;
+    text-decoration: none;
+}
+#our-record-wrapper{
+	padding-bottom: 40px;
+}
+/* --------- Why Choose Us ---------- */
+#why-choose-new .why-box .elementor-widget-container:hover{
+	background-color: #73b21a;
+	border-color: #73b21a;
+}
+#why-choose-new .why-box .elementor-widget-container:hover .elementor-icon{
+	background-color: #73b21a;
+	border-color: #73b21a;
+}
+#why-choose-new .why-box .elementor-widget-container:hover .elementor-icon-box-description{
+	color: #fff;
+}
+#why-choose-new .why-box .elementor-widget-container:hover i
+{
+  transition: 1s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+  -webkit-transform: rotateY(360deg);
+  -moz-transform: rotateY(360deg);
+  -o-transform: rotateY(360deg);
+  -ms-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}
+
+#why-choose-new .elementor-icon i{
+	width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 13px 13px;
+	background-color: #fff;
+	color:#9e9d9d;
+	font-size: 15px;
+}
+#why-choose-new .elementor-icon{
+    border-radius: 50%;
+    padding: 7px;
+    display: inline-block;
+    position: relative;
+    left: -29px;
+    top: 3px;
+	border: 2px dashed #fff;
+}
+#why-choose-new .why-box .elementor-widget-container{
+	border: 2px dashed #fff;
+    padding: 15px 0;
+    margin-bottom: 30px;
+	max-width: 516px;
+}
+/* -------- partners --------- */
+#partners-new .elementor-image-carousel-wrapper{
+	position: relative;
+    width: 116%;
+    z-index: 2;
+    top: 25px;
+    -webkit-box-shadow: 0px 0px 57px 0px rgba(0, 0, 0, 0.11);
+    box-shadow: 0px 0px 57px 0px rgba(0, 0, 0, 0.11);
+	background-color:#fff;
+	margin-top: -20px;
+	padding: 12px 0;
+}
+#partners-new{
+	padding-bottom: 40px;
+	padding-top: 0 !important;
+}
+#our-records{
+	padding-bottom: 60px;
+}
+#partners-new .swiper-slide-inner{
+	padding-bottom: 25px;
+}
+
+/* ---------- Media ----------- */
+
+@media screen and (max-width:576px) {
+	#partners-new .elementor-image-carousel-wrapper{
+		width: 100%;
+	}
+	#why-choose-new .elementor-icon{
+		left: auto;
+	}
+}
+@media screen and (max-width: 767px) and (min-width:576px){
+	#partners-new .elementor-image-carousel-wrapper{
+		width: 100%;
+	}
+	#why-choose-new .why-box .elementor-widget-container{
+		margin: auto;
+	}
+	#why-choose-new .elementor-icon{
+		left: auto;
+	}
+	#our-project .vw_gardening_box .post{
+		font-size: 13px;
+	}
+	#about-us .elementor-row{
+		text-align: center;
+	}
+	section{
+		padding: 30px;
+	}
+}
+@media screen and (max-width: 991px) and (min-width:767px){
+	#why-choose-new .why-box .elementor-widget-container{
+		width: 334px;
+	}
+	#why-choose-new .elementor-icon{
+		left: 0;
+	}
+	#partners-new .swiper-slide-inner img{
+		width: 62px;
+		height: 85px;
+	}
+}
+@media screen and (max-width: 1200px) and (min-width:992px){
+	#why-choose-new .why-box .elementor-widget-container{
+		width: 415px;
+    	margin-left: 34px;
+	}
+	#why-choose-new .elementor-icon{
+		left: -30px;
+	}
+	#partners-new .swiper-slide-inner img{
+		width: 85px;
+		height: 121px;
+	}
+	#our-products-new ul.products{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	#our-products-new ul.products li{
+		width: 23%;
+    	margin-left: auto;
+    	margin-right: auto;
+	}
+}

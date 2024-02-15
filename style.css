@@ -1,0 +1,433 @@
+/*
+Theme Name: VW Gardening landscaping Pro
+Theme URI: https://www.vwthemes.com/themes/landscaping-wordpress-theme/
+Author: VW Themes
+Author URI: https://www.vwthemes.com/
+Description: This landscaping WordPress theme brings many incredible features under one roof to help you design a performance focused website with unique design and visually stunning look. The thoughtful placement of objects throughout the theme leads to a beautiful design which catches user attention at the very first glance. It is an intuitive theme with the use of refreshing colours and apt typography making it more impactful. This landscaping WordPress theme requires minimum efforts to set it up and hence is equally easy for experienced coder and WordPress newbie to explore it to its maximum potential to craft a highly efficient gardening and landscaping website. Whether you run the biggest nursery shop in your city or famous for offering gardening services throughout the country, this landscaping WP theme will perfectly represent your brand aiding you in handling your website smoothly without ever raising the need to take help from outside.
+Version: 1.2.6
+Requires at least: 5.4.2 
+Requires PHP: 5.2.4
+Tested up to: 5.8.1
+License: GNU General Public License
+License URI:license.txt
+Text Domain: vw-gardening-landscaping-pro
+Tags: one-column, right-sidebar, custom-menu, editor-style, featured-images, full-width-template, sticky-post, theme-options, threaded-comments
+VW Gardening landscaping Pro WordPress Theme has been created by VW Themes(vwthemes.com), 2019.
+VW Gardening landscaping Pro WordPress Theme is released under the terms of GNU GPL
+*/
+/* Basic Style */
+/* latin */
+@font-face {
+  src: url(https://fonts.googleapis.com/css2?family=Krub:wght@700&display=swap);
+  font-family: 'Krub', sans-serif;;
+  font-style: normal;
+  font-weight: 700;
+}
+
+:root {
+  --gray: #6c6c6c;
+  --white: #ffffff;
+  --black: #000000;
+  --nero: #222222;
+  --lightgray: #666;
+  --lightgray1: #bbb;
+  --green: #73b21a;
+  scroll-behavior: auto;
+}
+:root {
+  --common-font-body: 'Poppins';
+}
+html body, img, h1, h2, h3, h4, h5, h6, section h2, .widget_recent_entries ul, .widget.widget_calendar table {
+  margin:0;
+}
+html body, img, p, ul, ol, section h2, section h5, .widget_calendar td, .widget_calendar th{
+  padding:0;
+}
+html body{ 
+  -ms-word-wrap:break-word; 
+  word-wrap:break-word; 
+  background-color: var(--white); 
+  font-size: 15px;
+  color: var(--black1);
+  font-family: var(--common-font-body);
+  font-weight: 300;
+  overflow-x: hidden;
+}
+.container {
+  width: 1100px;
+  max-width: 100%;
+}
+img{
+  border:none; 
+  max-width:100%; 
+  height:auto;
+}
+h1, h2, h3, h4, h5, h6{
+  padding:10px 0;
+  letter-spacing: 1px !important;
+  font-family: var(--common-font-body);
+  color: var(--black);
+}
+p{
+  margin:0 0 15px;
+  font-size:13px;
+  font-weight:300;
+}
+p, ul li a{
+  letter-spacing: 0px;
+}
+body a{
+  text-decoration:none; 
+  color: var(--nero);
+}
+a:hover{
+  color: var(--lightgray);
+  text-decoration: none;
+}
+ul,ol{ 
+  margin:0 0 0 15px;
+}
+ul li, ol li{font-size: 14px;}
+:hover{-webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+}
+blockquote {
+  font-size: 18px;
+  font-style: italic;
+  max-width: 450px;
+  margin: 0.25em 0;
+  padding: 0.25em 40px;
+  line-height: 1.45;
+  position: relative;
+  color: var(--gray);
+}
+blockquote:before, blockquote:after {
+  display: block;
+  font-size: 80px;
+  position: absolute;
+  left: 0px;
+  top: -10px;
+  color: var(--lightgray);
+}
+blockquote:before {
+  content: "\201C";
+}
+blockquote:after {
+  content: "\201D";
+}
+blockquote cite {
+  color: var(--lightgray);
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+}
+blockquote cite:before {
+  content: "\2014 \2009";
+}
+small{
+  font-size:14px !important;
+}
+input[type="text"], input[type="tel"], input[type="email"], input[type="phno"],input[type="password"], textarea, select, table{
+  width: 100%;
+}
+input[type="text"], input[type="tel"], input[type="email"], input[type="phno"],input[type="password"], textarea{
+  border:1px solid var(--nero);
+  font-size:13px;
+  padding:10px 10px; 
+  margin:0 0 0px 0;
+  height:auto;
+  background: transparent;
+}
+section{
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 60px 0;
+}
+select{
+  padding: 6px;
+}
+input[type="submit"] {
+  padding: 10px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  background-color: var(--green);
+  border-radius: 50px;
+}
+input[type="submit"]:hover{
+  cursor: pointer;
+}
+textarea {
+  height: 80px;
+}
+.bounce, .flash, .pulse, .shake, .swing, .tada, .wobble, .bounceIn, .bounceInDown, .bounceInLeft, .bounceInRight, .bounceInUp, .bounceOut, .bounceOutDown, .bounceOutLeft, .bounceOutRight, .bounceOutUp, .fadeIn, .fadeInDown, .fadeInDownBig, .fadeInLeft, .fadeInLeftBig, .fadeInRight, .fadeInRightBig, .fadeInUp, .fadeInUpBig, .fadeOut, .fadeOutDown, .fadeOutDownBig, .fadeOutLeft, .fadeOutLeftBig, .fadeOutRight, .fadeOutRightBig, .fadeOutUp, .fadeOutUpBig, .flip, .flipInX, .flipInY, .flipOutX, .flipOutY, .lightSpeedIn, .lightSpeedOut, .rotateIn, .rotateInDownLeft, .rotateInDownRight, .rotateInUpLeft, .rotateInUpRight, .rotateOut, .rotateOutDownLeft, .rotateOutDownRight, .rotateOutUpLeft, .rotateOutUpRight, .slideInDown, .slideInLeft, .slideInRight, .slideOutLeft, .slideOutRight, .slideOutUp, .rollIn, .rollOut, .zoomIn, .zoomInDown, .zoomInLeft, .zoomInRight, .zoomInUp, .slideInUp{
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  visibility: visible!important;
+}
+.comment-list .comment-content ul { 
+  list-style:none; 
+  margin-left:15px;
+}
+.comment-list .comment-content ul li{
+  margin:5px;
+}
+table, td, th {
+  border: 1px solid black;
+}
+/*-------------------------- Calendar widget --------------------------*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0 0 1.75em;
+  table-layout: fixed;
+}
+.widget.widget_calendar td, .widget.widget_calendar tr, .widget.widget_calendar th {
+  border: 1px solid var(--white);
+  color: var(--black);
+}
+input[type="submit"], .widget_calendar caption, .widget_calendar tbody a, #vw_gardening_footer .widget.widget_calendar td, #vw_gardening_footer .widget.widget_calendar tr, #vw_gardening_footer .widget.widget_calendar th {
+  color: var(--white);
+}
+.widget_calendar td, .widget_calendar th {
+  line-height: 1.5625;
+  text-align: center;
+}
+.widget_calendar caption {
+  font-weight: 900;
+  margin-bottom: 0em;
+  padding-left: 15px;
+  caption-side: top;
+}
+.widget_calendar tbody a {
+  background-color: var(--lightgray1);
+  display: block;
+  font-weight: 700;
+}
+.widget_calendar tbody a:hover, .widget_calendar tbody a:focus {
+  background-color: var(--lightgray);
+}
+.widget th, .widget td {
+  padding: 0em;
+}
+/*-------------------- Sweep To Right -----------------------*/
+.hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-right:hover:before,
+.hvr-sweep-to-right:focus:before,
+.hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+/*----------------------  index ---------------------------*/
+.post-section {
+  padding: 20px 0;
+}
+/*------------------------- Headings --------------------------*/
+section h2{
+  font-weight:bold;
+  padding: 0 0 10px;
+  letter-spacing: 3px;
+}
+section h4{ 
+  font-size:20px;
+}
+section h5{
+  color: var(--nero); 
+  font-weight:bold;
+  margin:0 0 10px 0;
+}
+.innerbox{
+  background-size:100% 100%;
+}
+/* ---------------- Button Effects --------------- */
+.hvr-bounce-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hvr-bounce-out:hover, .hvr-bounce-out:focus, .hvr-bounce-out:active {
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+/*-------------- Owl crousel ---------------*/
+.owl-carousel .owl-item img {
+  width: auto;
+  margin: 0 auto;
+}
+button.owl-next, button.owl-prev {
+  background: var(--nero);
+}
+button.owl-prev, button.owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  padding: 10px 20px;
+}
+button.owl-prev {
+  left: -10px;
+}
+button.owl-next {
+  right: -10px;
+}
+.screen-reader-text {
+  position: absolute;
+  top:-9999em;
+  left:-9999em;
+}
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  clip-path: none;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+}
+.aligncenter, img.aligncenter { 
+  clear: both; 
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
+  margin-top:0;
+  padding:5px; 
+}
+.bypostauthor{
+  margin:0;
+  padding:0;
+}
+.woocommerce span.onsale{
+  right: auto !important;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: var(--white);
+  border-radius: 50%;
+  padding: 19px 0px;
+  background-color: var(--nero);
+  width: 55px;
+  height: 55px;
+  display: inline-block;
+  top: 17px !important;
+  left: 20px !important;
+  line-height: 1;
+}
+.woocommerce .loader::before{
+  display: none;
+}
+.above_title h1 {
+    color: #fff;
+}
+label.wp-block-search__label {
+    display: none;
+}
+.home.blog #vw_gardening_sidebar input[type="search"]{
+  margin-bottom: 0;
+}
+.home.blog .widget_block{
+  display: block;
+}
+.wp-block-latest-comments__comment{
+  padding-top: 14px;
+}
+.alert.alert-minimalist {
+  background-color: rgb(255, 255, 243);
+  border-color: rgb(115, 178, 26);
+  border-radius: 3px;
+  color: rgb(149, 149, 149);
+  box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.3);
+  padding: 10px;
+  z-index: 1000000 !important;
+}
+.prod-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  padding-left: 62px;
+  display: inline-block;
+}
+.prod-messg {
+  font-size: 13px;
+  font-weight: 500;
+  color: #5c5959;
+  padding-left: 62px;
+  margin-top: 10px;
+}
+.alert.alert-minimalist img {
+  width: 50px;
+  position: absolute;
+}
+.prod-messg a {
+  font-weight: 700;
+  color: #73b21a;
+  font-size: 15px;
+}
+.home.menu-item:before {
+    content: '';
+    background-image: url(../assets/images/icon-new.png);
+}

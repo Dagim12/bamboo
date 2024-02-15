@@ -1,0 +1,14 @@
+.wp-megamenu-main-wrapper.wpmega-black-white ul.imma-mega-wrapper li.wpmega-menu-flyout ul, .wp-megamenu-main-wrapper.wpmega-black-white.imma-orientation-horizontal, .wp-megamenu-main-wrapper.wpmega-black-white.imma-orientation-vertical{
+	background: unset !important;
+    box-shadow: none !important;
+}
+.wpmega-black-white .imma-mega-wrapper > li:hover, .wpmega-black-white .imma-mega-wrapper > li.current-menu-item{
+	background: unset !important;
+}
+.wp-megamenu-main-wrapper.wpmega-black-white.imma-orientation-horizontal ul.imma-mega-wrapper > li > a, .wp-megamenu-main-wrapper.wpmega-black-white.imma-orientation-vertical ul.imma-mega-wrapper > li > a{
+	font-weight: 700 !important;
+}
+.imma-sub-menu-wrap{
+    max-height: 100vh;
+    overflow-y: scroll;
+}

@@ -1,0 +1,46 @@
+#customize-controls .control-section-vw-gardening-landscaping-pro .accordion-section-title:hover,
+#customize-controls .control-section-vw-gardening-landscaping-pro .accordion-section-title:focus {
+    background-color: #fff;
+}
+
+.control-section-vw-gardening-landscaping-pro .accordion-section-title .button {
+    margin-top:  -4px;
+    font-weight: 400;
+    margin-left: 8px;
+}
+
+.rtl .control-section-vw-gardening-landscaping-pro .accordion-section-title .button {
+    margin-left:  0;
+    margin-right: 8px;
+}
+a.review_st {
+    background: #016194 !important;
+    color: #ffffff !important;
+    font-weight: bold !important;
+    border: none !important;
+}
+.customize-control-title
+{
+    background-color: transparent !important;
+    color: #222 !important;
+    padding-left: 0 !important;
+}
+label.customize-control-title
+{
+    background-color: transparent !important;
+    color: #222 !important;
+    padding-left: 0;
+}
+.simple-seperator-custom-control .customize-control-title
+{
+    background-color: #0073aa !important;
+    padding-left: 15px !important
+}
+img.sirat-radio-img-img {
+    width: 80px;
+    margin-right: 2px !important;
+}
+.theme-custom-section h3{
+    background-color: #28a745 !important;
+    color: #fff !important;
+}

@@ -1,0 +1,62 @@
+.spinner-loading-box{
+	display: none;
+}
+amp-sidebar#sidebar1{
+	display: block;
+	width: 250px;
+}
+.i-amphtml-sidebar-mask[i-amphtml-sidebar-opened] {
+    animation: unset !important;
+    width: 0px !important;
+}
+[class*="amphtml-sidebar-mask"] { background: none; z-index: 999; }
+.i-amphtml-sidebar-mask{
+	width: 0vw !important;
+	height: 0vh !important;
+	background-color: transparent !important;
+	position: static!important;
+}
+.owl-carousel{
+    position: relative;
+    min-height: 300px;
+    -webkit-backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    width: 100%;
+}
+#our-services .our-services-contents, #pricing-plans .pricing-plans-box, #our-blog .our-blog-content {
+    width: 50%;
+    float: left;
+    position: relative;
+    padding-bottom: 20px;
+}
+#our-products .our-products-content.text-center {
+    position: relative;
+    width: 25%;
+    float: left;
+    padding-bottom: 50px;
+}
+#our-team .team-contents.text-center{
+	position: relative;
+    width: 25%;
+    float: left;
+}
+#testimonials {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+.testimonials-content {
+    padding-bottom: 20px;
+}
+.our-partners-box.text-center.owl-carousel {
+    min-height: 200px;
+}
+#our-partners .our-partners-box amp-img {
+    position: relative;
+    width: 20%;
+}
+@media screen and (max-width:767px){
+    #our-services .our-services-contents, #pricing-plans .pricing-plans-box, #our-blog .our-blog-content, #our-products .our-products-content.text-center, #our-team .team-contents.text-center, #our-partners .our-partners-box amp-img{
+        width: 100%;
+    }
+}

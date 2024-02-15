@@ -1,0 +1,947 @@
+:root {
+  --black: #000000;
+  --green: #73b21a;
+  --white: #ffffff;
+  --white1: #eaeaea;
+  --nero: #222222;
+  --lightgray: #6e6e6e;
+  --lightgray2: #d7d7d7;
+  --lightgray1: #b5b7b9;
+  --lightgray3: #929498;
+}
+:root {
+  --common-font-st: 'Playfair Display SC', serif;
+  --common-font-head: 'Krub', sans-serif;
+  --common-font-para: "Roboto";
+}
+.hvr-shrink {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+/* --------- SLIDER--------- */
+#vw_gardening_slider{ 
+  max-width:100%;  
+  position:relative;
+  padding: 0;
+}
+#vw_gardening_slider h1 {
+  padding-top: 15px;
+  font-size: 40px;
+}
+#vw_gardening_slider p {
+  margin: 15px 0 15px 0;
+}
+.slider-box {
+  top: 56%;
+  transform: translateY(-50%);
+  padding: 20px;
+  max-width: 45%;
+  margin: 0 auto;
+  /*left: 0;*/
+}
+#vw_gardening_slider .carousel-caption {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#vw_gardening_slider .carousel-prev-button {
+  right: 111px;
+  bottom: 26%;
+}
+#vw_gardening_slider .carousel-next-button{
+  right: 35px;
+  bottom: 26%;
+}
+#vw_gardening_slider .carousel-control-prev-icon,
+#vw_gardening_slider .carousel-control-next-icon{
+  background-image:none; 
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon{
+  width: auto;
+  height: auto;
+}
+#vw_gardening_slider a i {
+  padding: 12px 14px;
+  font-size: 17px;
+  width: 40px;
+  height:40px;
+  border-radius: 50%;
+}
+#vw_gardening_slider .slide_nav a {
+  border-radius: 50%;
+  padding: 5px 6px;
+  width: 55px;
+  height:55px;
+}
+#vw_gardening_slider .slide_nav a:hover i, #vw_gardening_slider .read-more:hover span, .section-small_title:after, .section-small_title:before, #our-expertise .our-expertise-features:hover a span, #about-us .section-small_title:after, #about-us .about-feature-content i, #our-services .services-box h5:after, #our-services .owl-carousel .owl-dots .active, #working-process .working-process-box:hover, #working-process .working-process-box:hover i, #our-project .project-tabs ul li .active span, #pricing-plans .pricing-plans-box:hover .pricing-plans-content-box, #pricing-plans .owl-carousel .owl-dots .active, #our-products .owl-carousel .owl-dots .active, #testimonials .testimonials-icons i:hover, #testimonials .owl-carousel .owl-dots .active, #our-team .team-meta a i:hover, #our-team .team-meta a:first-child i:hover, #our-team .owl-carousel .owl-dots .active, #why-choose-us .why-choose-us-content:hover, #why-choose-us .why-choose-us-content:hover span, #our-blog .owl-carousel .owl-dots .active, #our-blog .our-blog-content:hover .blog-date, #our-partners .owl-carousel .owl-dots .active {
+  background-color: var(--green);
+}
+#vw_gardening_slider ol.carousel-indicators .active{
+  background-color: var(--green) !important;
+}
+#vw_gardening_slider .read-more {
+  border-radius: 40px;
+  padding: 6px;
+  margin-right: 17px;
+  margin-top: 10px;
+  font-size: 13px;
+}
+#vw_gardening_slider .read-more span {
+  letter-spacing: 1px;
+  border-radius: 40px;
+  padding: 8px 11px;
+  display: inline-block;
+  width: 155px;
+  text-align: center;
+}
+#vw_gardening_slider .read-more:hover span {
+  color: var(--white);
+}
+.carousel-fade .carousel-item {
+ opacity: 0;
+ transition-duration: .6s;
+ transition-property: opacity;
+}
+.carousel-fade  .carousel-item.active, .carousel-fade  .carousel-item-next.carousel-item-left, .carousel-fade  .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+}
+.carousel-fade .active.carousel-item-left, .carousel-fade  .active.carousel-item-right {
+  opacity: 0;
+}
+.carousel-fade  .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item.active, .carousel-fade .active.carousel-item-left, .carousel-fade  .active.carousel-item-prev {
+  transform: translateX(0);
+  transform: translate3d(0, 0, 0);
+}
+#vw_gardening_slider ol.carousel-indicators {
+  bottom: 50%;
+  left: auto;
+  transform: rotate(90deg);
+  margin-right: 9%;
+}
+ #testimonials .testimonials-icons i:hover, #our-team .team-meta a i:hover, #our-team .team-meta a:first-child i:hover,  #why-choose-us .why-choose-us-content:hover {
+  border:2px solid var(--green);
+}
+#vw_gardening_slider ol.carousel-indicators .active{
+  border:2px solid var(--green) !important;
+}
+#vw_gardening_slider ol.carousel-indicators li {
+  max-width: 10px !important;
+  padding: 3px !important;
+  color: var(--nero) !important;
+  border: 2px dashed var(--white) !important;
+  background-color: transparent !important;
+  margin-right: 10px !important;
+  border-radius: 50% !important;
+}
+#vw_gardening_slider .slider-box .small_head{
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-family: var(--common-font-st);
+    font-weight: 700;
+}
+#vw_gardening_slider .slider-box .small_head:after{
+  content: "";
+    width: 30px;
+    height: 2px;
+    margin-top: 15px;
+    margin-left: 9px;
+    background-color: #73b21a;
+    display: inline-block;
+}
+.carousel-indicators [data-bs-target] {
+    box-sizing: inherit;
+    flex: unset;
+    height: 3px;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0;
+    border-top: unset;
+    border-bottom: unset;
+    opacity: 1;
+    transition: unset;
+}
+/* ------------ Common CSS ------------- */
+#vw_gardening_slider img, #our-project .vw_gardening_box .box-content,#testimonials .testimonials-box, #pricing-plans .pricing-plans-features_box, #our-records .our-records-content {
+  width: 100%;
+}
+.vw-fixed{
+  background-attachment: fixed;
+}
+.vw-scroll{
+  background-attachment: scroll;
+}
+#vw_gardening_slider a i, #vw_gardening_slider .read-more span, #our-records .our-records-content, #working-process .working-process-box i, #our-services .services-box, #pricing-plans .pricing-plans-box, #pricing-plans .pricing-plans-features_box, #why-choose-us .why-choose-us-content i, #our-blog .our-blog-content .our-blog-box, #our-partners .our-partners-box  {
+  background-color: var(--white);
+}
+.section-small_title {
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-family: var(--common-font-st);
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.section-main_title {
+  font-size: 34px;
+  letter-spacing: 4px;
+}
+.feature-heading, .section-main_title, #our-products .product-price .add_to_cart_button, #our-products .product-price .add_to_cart_button {
+  font-family: var(--common-font-head);
+  font-weight: 700;
+}
+.content-para, #our-products .product-price ins, #our-products .product-price del {
+  line-height: 28px;
+  font-family: var(--common-font-para);
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.section-small_title:after, .section-small_title:before {
+  content: "";
+  width: 30px;
+  height: 2px;
+  margin-top: 15px;
+}
+.section-small_title:after{
+  margin-left: 9px;
+}
+.section-small_title:before {
+  margin-left: -40px;
+}
+.pos-abs, .section-small_title:before, .section-small_title:after, #about-us .section-small_title:after, #our-project .vw_gardening_box:before, #our-project .vw_gardening_box:after, #our-products .product-sale span, #testimonials .owl-carousel .owl-dots, #our-partners .owl-carousel .owl-dots {
+  position: absolute;
+}
+.borderd-first{
+  border:2px dashed var(--lightgray2);
+}
+.borderd-second, #vw_gardening_slider .read-more:hover, #our-expertise .our-expertise-features:hover, #our-expertise .our-expertise-features:hover a, #our-services .owl-carousel .owl-dots .active, #working-process .working-process-box:hover, #pricing-plans .owl-carousel .owl-dots .active, #our-products .owl-carousel .owl-dots .active, #testimonials .owl-carousel .owl-dots .active, #our-team .owl-carousel .owl-dots .active, #our-blog .owl-carousel .owl-dots .active, #our-partners .owl-carousel .owl-dots .active {
+  border:2px dashed var(--green);
+}
+#our-project .project-tabs ul li .active{
+  border:2px dashed var(--green) !important;
+}
+.color-blck, #our-products .added_to_cart {
+  color: var(--nero);
+}
+.borderd-wht, #testimonials .owl-carousel .owl-dots button {
+  border:2px dashed var(--white);
+}
+/* ------------ Our Expertise ------------- */
+#our-expertise .our-expertise-features {
+  padding: 25px;
+  margin-top: 40px;
+}
+#our-expertise h3, #our-services h3, #our-project .vw_gardening_box .title a, #pricing-plans .pricing-plans-content-box h2 sub{
+  font-size: 18px;
+}
+#our-expertise .our-expertise-features a {
+  border-radius: 40px;
+  padding: 14px 7px;
+  position: relative;
+  bottom: -52px;
+}
+#our-expertise .our-expertise-features a span {
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  border-radius: 40px;
+  background-color: var(--lightgray2);
+}
+#our-expertise .our-expertise-features:hover a span {
+  color: var(--white);
+}
+/* -------------- About Us ------------ */
+#about {
+  -vendor-animation-duration: 3s;
+  -vendor-animation-delay: 2s;
+  -vendor-animation-iteration-count: infinite;
+}
+#about-us .section-small_title:before {
+  display: none;
+}
+#about-us .section-small_title:after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  margin-top: 15px;
+  margin-left: 9px;
+}
+#about-us .about-feature-content {
+  padding-bottom: 30px;
+}
+#about-us .about-feature-content i {
+  padding: 12px 12px;
+  color: var(--white);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+#about-us .about-feature-content span {
+  padding: 7px;
+  border-radius: 50%;
+  display: inline-block;
+}
+#about-us .about-feature-content:hover i {
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+  -webkit-transform: rotateY(360deg);
+  -moz-transform: rotateY(360deg);
+  -o-transform: rotateY(360deg);
+  -ms-transform: rotateY(360deg);
+}
+#about-us .feature-heading {
+  font-size: 17px;
+  letter-spacing: 0px;
+}
+.about-link {
+    max-width: 60%;
+}
+#about-us h2.section-main_title, #about-us .section-small_title {
+    letter-spacing: 1px;
+}
+/* ---------- Our Services ------------- */
+.bpadding-40 {
+  padding-bottom: 40px;
+}
+#our-services .services-main-box{
+  background-color: #f8f8f8;
+  margin-left: -15px;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0px;
+}
+.services-img-box {
+  padding-left: 25px;
+}
+#our-services .services-box {
+  padding: 20px;
+  position: relative;
+  left: -70px;
+  top: 0px;
+  margin-right: -55px;
+}
+#our-services .feature-heading{
+  margin: 0 0 10px 0;
+  padding: 0;
+  width: 70%;
+}
+#our-services .services-box h3:after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  display: block;
+  margin-top: 15px;
+  background-color: #73b21a;
+}
+.fonts-14, #our-products .product-price del {
+  font-size: 13px;
+}
+#our-services .owl-carousel .owl-dots, #pricing-plans .owl-carousel .owl-dots, #our-products .owl-carousel .owl-dots, #testimonials .owl-carousel .owl-dots, #our-team .owl-carousel .owl-dots, #our-blog .owl-carousel .owl-dots, #our-partners .owl-carousel .owl-dots {
+  padding-top: 40px;
+  text-align: center;
+}
+#our-services .owl-carousel .owl-dots button {
+  padding: 3px !important;
+  border:2px dashed var(--nero);
+  background-color:transparent;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+#our-services .services_text {
+  line-height: 27px;
+  color: #6e6e6e;
+  margin-bottom: 15px;
+}
+#our-services .owl-carousel .owl-dots{
+  display: block;
+}
+/* ------------ Working Process ------------- */
+#working-process .working-process-head p, #working-process .working-process-head h2 {
+  color: var(--white);
+}
+#working-process .working-process-box {
+  padding: 15px;
+  max-width: 225px;
+  margin-top: 40px;
+}
+#working-process .working-process-box .feature-number {
+  font-size: 55px;
+  letter-spacing: 3px;
+  color: var(--white);
+}
+#working-process .working-process-box a {
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: var(--white);
+}
+#working-process .working-process-box i {
+  width: 40px;
+  height: 40px;
+  padding: 12px 14px;
+  border-radius: 50%;
+}
+#working-process .working-process-box span {
+  background-color: var(--nero);
+  display: inline-block;
+  border-radius: 50%;
+  padding: 7px; 
+  position: relative;
+  left: -45px;
+  top: 20px;
+}
+#working-process .working-process-box:hover i {
+  transition: 1s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+  -webkit-transform: rotateY(360deg);
+  -moz-transform: rotateY(360deg);
+  -o-transform: rotateY(360deg);
+  -ms-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}
+#working-process .working-process-box:hover span.borderd-wht {
+    border: 2px dashed #73b21a;
+}
+/* --------------- Our Projects ----------------- */
+#our-project .our-project-head {
+  padding-bottom: 30px;
+}
+#our-project .project-tabs {
+  padding-bottom: 15px;
+}
+#our-project ul.nav {
+  display: -webkit-inline-box;
+  border-bottom: unset;
+}
+#our-project .nav-tabs .nav-link:focus,#our-project .nav-tabs .nav-link:hover{
+  border: unset;
+}
+#our-project .project-tabs ul {
+  margin: 0 auto;
+}
+#our-project .project-tabs ul li {
+  display: inline-block;
+  margin-right: 15px;
+  position: relative;
+}
+#our-project .project-tabs ul li a span:before {
+    content: '';
+    border-right: 1px solid #73b21b;
+    position: absolute;
+    height: 12px;
+    top: 8px;
+    left: 0;
+}
+#our-project .project-tabs ul li .active span:before{
+    border: unset;
+}
+#our-project .project-tabs ul li a {
+  font-size: 15px;
+  color: var(--lightgray);
+  padding: 0;
+}
+#our-project .project-image {
+  margin-top: 30px;
+}
+#our-project .project-tabs ul li .active {
+  border-radius: 28px;
+  padding: 14px 7px;
+  display:inline-block;
+  color: var(--black);
+}
+#our-project .project-tabs ul li .active span {
+  border-radius: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+#our-project .project-tabs ul li a span {
+  padding: 10px 22px;
+}
+/* ------ Project Overlay ----------- */
+#our-project .vw_gardening_box{
+  overflow: hidden;
+  position: relative;
+}
+#our-project .vw_gardening_box .box-content{
+  height: 100%;
+  padding: 20px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 2;
+  transition: all 0.2s ease 0.3s;
+}
+.project-borderbox {
+  border: 2px dashed #ffffff;
+  padding: 20px;
+}
+.project-bgbox {
+  background-color: #73b21a;
+  padding: 28px 28px 38px;
+  margin: -5px;
+}
+#our-project .vw_gardening_box:hover .box-content{ opacity: 1; }
+#our-project .vw_gardening_box .post {
+  color: var(--white);
+  margin-bottom: 10px;
+  font-family: var(--common-font-para);
+  font-weight: 500;
+}
+/* ------------- Pricing Plan -------------- */
+#our-project .vw_gardening_box .feature-heading, #pricing-plans .pricing-plan-head p, #pricing-plans .pricing-plan-head h2, .pricing-plans-box:hover a, .pricing-plans-box:hover .feature-heading, .pricing-plans-box:hover h3, #why-choose-us .why-choose-us-content:hover p {
+  color: var(--white);
+}
+#pricing-plans .pricing-plans-content-box {
+  background-color: var(--white1);
+  padding: 25px;
+}
+#pricing-plans .pricing-plans-content-box p {
+  font-size: 18px;
+  letter-spacing: 5px;
+}
+#pricing-plans .pricing-plans-content-box h3 {
+  font-size: 45px;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+}
+#pricing-plans .pricing-plans-content-box a {
+  letter-spacing: 0px;
+}
+#pricing-plans .pricing-plans-features_box ul {
+  list-style-type: none;
+  margin-left: 0;
+}
+#pricing-plans .pricing-plans-features_box ul li {
+  line-height: 35px;
+}
+#pricing-plans .pricing-plans-features_box ul li:nth-child(2) {
+  border-bottom: 1px solid var(--white1);
+}
+#pricing-plans .pricing-plans-features, #our-records .our-records-box, #testimonials .testimonials-box {
+  display: flex;
+  align-items: center;
+}
+#pricing-plans .pricing-plans-features_box {
+  position: relative;
+  left: -77px;
+  padding: 14px 15px;
+  -webkit-box-shadow: 0px 0px 57px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: 0px 0px 57px 0px rgba(0, 0, 0, 0.11);
+  width: 100%;
+}
+#pricing-plans sub {
+    bottom: 0;
+    font-size: 20px;
+}
+.white-color, #working-process .working-process-box:hover i, #testimonials .testimonials-icons i:hover, #our-team .team-meta a i:hover {
+  color: var(--white);
+}
+#pricing-plans .owl-carousel .owl-dots button {
+  padding: 3px !important;
+  border:2px dashed var(--white);
+  background-color:transparent;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+#pricing-plans .pricing-plans-content-box p:after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  display: block;
+  margin-top: 15px;
+  background-color: #73b21a;
+}
+#pricing-plans .pricing-plans-box:hover p:after{
+  background-color: var(--white); 
+}
+/* ------------- Our Products --------------- */
+#our-products {
+  padding-top: 0;
+}
+#our-products .product-sale span {
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: var(--white);
+  border-radius: 50%;
+  padding: 19px 0px;
+  background-color: var(--nero);
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  top: 17px;
+  left: 20px;
+  text-transform: uppercase;
+}
+#our-products .product-price ins{
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  color: var(--lightgray);
+  text-decoration: none;
+}
+#our-products .product-price del {
+  letter-spacing: 0px;
+  color: var(--lightgray);
+}
+.product-cartborder {
+  border: 2px dashed var(--nero);
+  width: fit-content;
+  padding: 5px 5px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 40px;
+  position: relative;
+}
+#our-products .our-products-content:hover .product-cartborder{
+  border: 2px dashed var(--green);
+}
+#our-products .product-price .add_to_cart_button {
+  letter-spacing: 1px;
+  color: #f7f7f7;
+  display: inline-block;
+  background-color: var(--nero);
+  padding: 7px 20px;
+  border-radius: 40px;
+}
+#our-products .added_to_cart {
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: top;
+  top: -28px;
+  left: 0;
+  right: 0;
+  color: #73b21a;
+}
+#our-products .owl-dots.disabled {
+    display: block !important;
+}
+#our-products .owl-carousel .owl-dots button {
+  padding: 3px !important;
+  border:2px dashed var(--nero);
+  background-color:transparent;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+#our-products .our-products-content:hover .onsale {
+  transition: 1s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+  -webkit-transform: rotateY(360deg);
+  -moz-transform: rotateY(360deg);
+  -o-transform: rotateY(360deg);
+  -ms-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}
+#our-products .our-products-content:hover .add_to_cart_button, #our-products .our-products-content:hover .product-sale span {
+  background-color: var(--green);
+}
+.product-rating {
+    display: inline-block;
+}
+.star-rating {
+    color: #feb42b;
+    border-color: #feb42b;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 1em;
+    line-height: 1;
+    font-size: 1em;
+    width: 5.4em;
+    font-family: star;
+    position: relative;
+}
+.star-rating span {
+    overflow: hidden;
+    float: left;
+    top: 0;
+    padding-top: 1.5em;
+    position: absolute;
+    left: 0;
+}
+.star-rating:before{
+  color: #feb42b;
+  border-color: #feb42b;
+  content: "\73\73\73\73\73";
+  float: left;
+  top: 0; 
+  margin: 0 auto; 
+}
+.star-rating span:before {
+    content: "\53\53\53\53\53";
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+/* -------------- Our Records ----------- */
+.product-records {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+#our-records .our-records-content {
+  padding: 20px;
+  position: relative;
+  left: -96px;
+  -webkit-box-shadow: 8px 0px 0px 18px rgba(239, 238, 238, 0.3);
+  box-shadow: 8px 0px 0px 18px rgba(239, 238, 238, 0.3);
+}
+#our-records .our-records-content span {
+  font-size: 30px;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding-top: 20px;
+}
+#our-records p.feature-heading {
+  color: #828282;
+}
+/* --------------- Testimonials ----------- */
+#testimonials .testimonial_text {
+  color: var(--lightgray1);
+  font-style: italic;
+  font-size: 13px;
+}
+#testimonials .testimonials-icons i {
+  width: 40px;
+  height: 40px;
+  border:2px solid var(--lightgray1);
+  border-radius: 50%;
+  color: var(--lightgray1);
+  padding: 10px 11px;
+  font-size: 16px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+#testimonials .testimonials-box {
+  padding-top: 30px;
+}
+#testimonials .client-box a {
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: var(--green);
+}
+#testimonials .client-box p {
+  font-size: 16px;
+  letter-spacing: 3px;
+  color: var(--white);
+}
+#testimonials .client-box .row{
+  align-items: center;
+}
+#testimonials .test-title {
+  text-align: right;
+  padding-top: 10px;
+}
+#testimonials .testimonials-box img {
+  border-radius: 50%;
+  width: auto;
+}
+#testimonials .owl-carousel .owl-dots {
+  right: -16px;
+  bottom: 50%;
+  width: auto;
+}
+#testimonials .owl-carousel .owl-dots button {
+  padding: 3px !important;
+  background-color:transparent;
+  border-radius: 50%;
+  margin-top: 10px;
+  display: block;
+  margin-right: 10px;
+}
+.owl-carousel .owl-dots button {
+  outline: none;
+}
+.testimonials-head .section-small_title{
+  color: #fff;
+}
+/* ------------- Our Team ------------- */
+#our-team .team-contents img {
+  border-radius: 50%;
+}
+#our-team .team-contents .team_name {
+  padding-top: 15px;
+}
+#our-team .team-contents .team_name a {
+  font-size: 16px;
+}
+#our-team .teachers-desig {
+  letter-spacing: 0px;
+}
+#our-team .team-meta {
+  padding-top: 15px;
+}
+#our-team .team-meta a i {
+  width: 40px;
+  height: 40px;
+  border:2px solid var(--lightgray3);
+  border-radius: 50%;
+  padding: 10px 10px;
+  margin-right: 7px;
+  color: var(--lightgray3);
+}
+#our-team .team-meta a:first-child i{
+  background-color: #000000;
+  border-color: #000000;
+  color: #ffffff;
+}
+#our-team .team-contents:hover a, .our-blog-content:hover .learn-more, #our-services .feature-heading:hover {
+  color: var(--green);
+}
+#our-team .team-contents:hover .teachers-desig{
+  font-weight: bold;
+}
+#our-team .owl-carousel .owl-dots button {
+  padding: 3px !important;
+  border:2px dashed var(--nero);
+  background-color:transparent;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+span.entry-author {
+    margin-right: 10px;
+}
+/* ---------- Why Choose Us ------------- */
+#why-choose-us .why-choose-us-content {
+  border:2px dashed var(--white);
+  padding:15px 15px 15px ;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+#why-choose-us .why-choose-us-content span {
+  border-radius: 50%;
+  padding: 7px;
+  display: inline-block;
+  position: relative;
+  left: -45px;
+  top: 24px;
+} 
+#why-choose-us .why-choose-us-content i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 13px 13px;
+}
+#why-choose-us .why-choose-us-content h4 a {
+  font-size: 18px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  color: var(--white);
+}
+#why-choose-us .why-choose-us-content p {
+  color: var(--lightgray1);
+}
+#why-choose-us .why-choose-us-content:hover i {
+  transition: 1s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+  -webkit-transform: rotateY(360deg);
+  -moz-transform: rotateY(360deg);
+  -o-transform: rotateY(360deg);
+  -ms-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+  background: #73b21b;
+  color: #fff;
+}
+#why-choose-us .why-choose-us-content:hover span {
+  background-color: currentColor;
+  border: 2px dashed var(--green);
+}
+/* ------------- Our Blog ------------- */
+#our-blog .our-blog-content h5 a {
+  font-size: 16px;
+  letter-spacing: 0px;
+}
+#our-blog .our-blog-content .blog_text {
+  line-height: 24px;
+  color: var(--lightgray);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#our-blog .our-blog-content .our-blog-box {
+  padding: 10px;
+  position: relative;
+  left: -78px;
+  width: 265px;
+  margin-top: 15px;
+  -webkit-box-shadow: 0px 0px 1px 10px rgba(188, 188, 188, 0.11);
+  box-shadow: 0px 0px 1px 10px rgba(188, 188, 188, 0.11);
+  top: 20px;
+}
+#our-blog .blog-date {
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: var(--white);
+  display: inline-block;
+  background-color: var(--nero);
+  padding: 5px 5px;
+  max-width: 60px;
+  left: 36px;
+  top: 20px;
+}
+#our-blog .owl-carousel .owl-dots button {
+  padding: 3px;
+  border:2px dashed var(--nero);
+  background-color:transparent;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+#our-blog .blog-meta{
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 7px;
+  font-size: 13px;
+}
+#our-blog .blog-meta i{
+  color: #a8a8a8;
+  padding-right: 5px;
+}
+/* ------------Our Partners ------------ */
+#our-partners .our-partners-box {
+  position: relative;
+  width: 116%;
+  z-index: 2;
+  top: 27px;
+  -webkit-box-shadow: 0px 1px 0px 12px rgba(172, 172, 172, 0.06);
+  box-shadow: 0px 1px 0px 12px rgba(172, 172, 172, 0.06);
+  }
+#our-partners .our-partners-box img {
+  padding: 26px 28px;
+  width: 75%;
+  height: 180px;
+}
+#our-partners .owl-carousel .owl-dots {
+  right: 8px;
+  top: 14%;
+}
+#our-partners .owl-carousel .owl-dots button {
+  width: 15px;
+  height: 15px;
+  border:2px dashed #111;
+  background-color:transparent;
+  border-radius: 50%;
+  margin-top: 10px;
+  display: block;
+}
+span.our-partners-dots, span.our-blog, span.our-team, span.testimonials, span.products, span.services, span.testimonials-dots, span.vw_gardening_slider, span.pricing-plans{
+  display: none;
+}

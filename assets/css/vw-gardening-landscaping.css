@@ -1,0 +1,426 @@
+/* Gardening Landscaping Pro CSS */
+
+.vwgardening-experties-sec .aligncenter,.vwgardening-service-sec .alignnone,.vwgardening-project-sec .alignnone,.vwgardening-price-plan-sec .alignnone,.vwgardening-product-sec .aligncenter,.vwgardening-testimonial-sec .alignnone,.vwgardening-testimonial-sec .aligncenter,.vwgardening-team-sec .alignnone,.vwgardening-team-sec .aligncenter,.vwgardening-blog-sec .aligncenter,.vwgrdening-partner-sec .alignnone{
+    border: unset !important;
+}
+
+.vwgardening-slide-small-head:after{
+    content: "";
+    width: 35px;
+    height: 2px;
+    margin-left: 20rem;
+    background-color: #73b21a;
+    display: inline-block;
+    position: absolute;
+    top: 14px;
+}
+.vwgardening-slider-sec .carousel-content {
+    max-width: 36%;
+}
+.vwgardening-slide-button2 {
+    margin-left: -33px;
+}
+.vwgardening-slide-button1 .ive-btn-wrap,.vwgardening-slide-button2 .ive-btn-wrap {
+    border: 2px dashed #fff;
+    padding: 8px 8px;
+    border-radius: 50px;
+}
+.vwgardening-slide-button1 .ive-btn-wrap {
+    width: 116px;
+}
+.vwgardening-slide-button2 .ive-btn-wrap {
+    width: 156px;
+}
+.vwgardening-slider-sec button.owl-prev {
+    right: 80px;
+    position: absolute;
+    top: 0;
+}
+.vwgardening-slider-sec .owl-nav{
+    left: -90px !important;
+}
+.vwgardening-section-small-head p:before,.vwgardening-section-small-head p:after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    margin-top: 15px;
+    position: absolute;
+    margin-left: -40px;
+    background-color: #73b21b;
+}
+.vwgardening-section-small-head p:before{
+    margin-left: -40px;
+}
+.vwgardening-section-small-head p:after {
+    margin-left: 9px;
+}
+.vwgardening-eexpert-content-box {
+    border: 2px dashed #d7d7d7;
+    padding: 17px 50px;
+}
+.vwgardening-expert-button {
+    position: relative;
+    bottom: -69px;
+}
+.vwgardening-expert-button .ive-btn-wrap {
+    border: 3px dashed #d7d7d7;
+    width: 140px;
+    margin: 0 auto;
+    padding: 8px 8px;
+    border-radius: 50px;
+}
+.vwgardening-eexpert-content-box .ive-btn-wrap:last-child{
+    margin-right: auto !important;
+}
+.vwgardening-experties-sec {
+    padding: 8% 0;
+}
+.vwgardening-about-content-box {
+    max-width: 85%;
+    padding-left: 10em;
+}
+.vwgardening-about-icon .ive-svg-style-stacked {
+    border: 3px dashed #73b21b;
+    border-radius: 50%;
+    padding: 8px;
+}
+.vwgardening-about-icon .ive_icon_main_parent:hover{
+	transition: 0.70s;
+  	-webkit-transition: 0.70s;
+  	-moz-transition: 0.70s;
+  	-ms-transition: 0.70s;
+  	-o-transition: 0.70s;
+  	-webkit-transform: rotateY(360deg);
+  	-moz-transform: rotateY(360deg);
+  	-o-transform: rotateY(360deg);
+  	-ms-transform: rotateY(360deg);
+  	transform: rotateY(360deg);
+}
+.vwgardening-about-small-head p:after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    margin-top: 15px;
+    margin-left: 7px;
+    position: absolute;
+    background-color: #73b21b;
+}
+.vwgardening-about-sec,.vwgardening-service-sec,.vwgardening-project-sec,.vwgardening-product-sec,.vwgardening-team-sec,.vwgardening-blog-sec {
+    padding: 6% 0;
+}
+.vwgardening-service-main-box {
+    background: #f8f8f8;
+}
+.vwgardening-service-content-box {
+    background: #fff;
+    padding: 20px;
+    position: relative;
+    left: -77px;
+    top: 17px;
+}
+.vwgardening-service-title h4{
+    margin-bottom: 10px !important;
+}
+.vwgardening-service-title {
+    width: 70%;
+}
+.vwgardening-service-title h4:after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    display: block;
+    margin-top: 15px;
+    background-color: #73b21a;
+}
+.vwgardening-process-box {
+    padding: 3% 5%;
+}
+.vwgardening-process-content-box {
+    border: 2px dashed;
+    padding: 32px 16px 10px;
+}
+.vwgardening-process-content-box:hover{
+	background-color: #73b21a;
+}
+.vwgardening-process-icon {
+    background-color: #222222;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 0px 26px;
+    position: relative;
+    left: -45px;
+    top: 0px;
+    border: 3px dashed #fff;
+}
+.vwgardening-process-icon-1{
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    left: -55px;
+    top: 10px;
+}
+.vwgardening-process-icon-1 .ive_icon_main_parent:hover{
+	transition: 0.70s;
+  	-webkit-transition: 0.70s;
+  	-moz-transition: 0.70s;
+  	-ms-transition: 0.70s;
+  	-o-transition: 0.70s;
+  	-webkit-transform: rotateY(360deg);
+  	-moz-transform: rotateY(360deg);
+  	-o-transform: rotateY(360deg);
+  	-ms-transform: rotateY(360deg);
+  	transform: rotateY(360deg);
+}
+.vwgardening-process-icon .ive_icon_main_parent:hover{
+	transition: 0.70s;
+  	-webkit-transition: 0.70s;
+  	-moz-transition: 0.70s;
+  	-ms-transition: 0.70s;
+  	-o-transition: 0.70s;
+  	-webkit-transform: rotateY(360deg);
+  	-moz-transform: rotateY(360deg);
+  	-o-transform: rotateY(360deg);
+  	-ms-transform: rotateY(360deg);
+  	transform: rotateY(360deg);
+}
+.vwgardening-process-sec {
+    padding-top: 6%;
+}
+.vwgardening-project-content-box {
+    opacity: 0;
+}
+.vwgardening-project-image:hover .vwgardening-project-content-box {
+    opacity: 1;
+}
+.vwgardening-project-sec ul.ive-tabs-title-list {
+    padding-bottom: 25px;
+    margin: 0 85px;
+}
+.vwgardening-price-left-box {
+    background: #eaeaea;
+    padding: 45px 30px;
+}
+.vwgardening-price-left-box:hover{
+	background-color: #73b21a;
+}
+.vwgardening-price-right-box {
+    background-color: #fefefe;
+}
+.vwgardening-price-right-content-box {
+    position: relative;
+    left: -77px;
+    top: 17px;
+    padding: 30px 36px;
+    -webkit-box-shadow: 0px 0px 57px 0px rgba(0, 0, 0, 0.11);
+    box-shadow: 0px 0px 57px 0px rgba(0, 0, 0, 0.11);
+    background: #ffffff;
+}
+.vwgardening-record-box {
+    background-color: #e5e5e5;
+}
+.vwgardening-ecord-content-box{
+    padding: 20px;
+    top: 13px;
+    position: relative;
+    left: -82px;
+    background-color: #ffffff;
+}
+.vwgardening-record-sec{
+    padding-bottom: 3%;
+}
+.vwgardening-testimonial-sec img,.vwgrdening-partner-sec img{
+    width: auto !important;
+}
+.vwgardening-testimonial-sec{
+    padding-top: 3%
+}
+.vwgardening-why-choose-box {
+    border: 2px dashed #fff;
+    padding: 15px 0px;
+}
+.vwgardening-why-choose-box:hover {
+	background-color: #73b21a;
+}
+.vwgardening-why-choose-us-sec {
+    padding: 6% 8%;
+}
+.vwgardening-partner-box{
+    position: relative;
+    width: 116%;
+    z-index: 2;
+    top: 25px;
+    -webkit-box-shadow: 5px -4px 0px 20px rgb(172 172 172 / 0.11);
+    box-shadow: 5px -4px 0px 20px rgb(172 172 172 / 0.11);
+    background: #fff;
+    padding: 24px 0 !important;
+}
+.vw-gardaning-pro-latest-blog .post-meta{
+	border-bottom: 1px solid #d9d9d9;
+}
+.vw-gardaning-pro-latest-blog .ive-inner-post-content{
+	box-shadow: 0px 0px 40px 15px rgb(188 188 188 / 50%);
+}
+@media screen and (max-width: 599px){
+    .vwgardening-service-title h4:after,.vwgardening-slide-button1,.vwgardening-slide-button2{
+        display: none !important;
+    }
+    .vwgardening-slider-sec .carousel-content,.vwgardening-about-content-box{
+        max-width: 100%;
+    }
+    .vwgardening-eexpert-content-box{
+        margin-bottom: 50px;
+    }
+    .vwgardening-about-content-box{
+        padding: 1em;
+    }
+    .vwgardening-service-title{
+        width: 100%;
+    }
+    .vwgardening-service-content-box{
+        left: 0;
+        padding-bottom: 35px;
+    }
+    .vwgardening-process-icon{
+    	background-color : unset !important;
+    	border : none !important;
+    }
+    .vwgardening-project-sec ul.ive-tabs-title-list {
+        margin: 0 15px;
+    }
+    .vwgardening-price-left-box{
+        padding: 31px 15px;
+    }
+    .vwgardening-price-right-content-box,.vwgardening-ecord-content-box{
+        left: 0;
+    }
+    .vwgardening-record-box figure {
+        text-align: center;
+    }
+    .vwgrdening-partner-sec img{
+        margin: 10px auto;
+    }
+    .vwgardening-product-sec .woo-prod-img img{
+        margin: 0 auto !important;
+    }
+    .vwgardening-slider-sec p,.vwgardening-slider-sec h2,.vwgardening-blog-sec p,.vwgardening-process-content-box p,.vwgardening-process-content-box h4{
+        text-align: center !important;
+    }
+    .vwgardening-about-sec, .vwgardening-service-sec, .vwgardening-project-sec, .vwgardening-product-sec, .vwgardening-team-sec, .vwgardening-blog-sec {
+        padding: 29% 0;
+    }
+    .vwgardening-process-icon-1,.vwgardening-process-icon{
+        position: unset;
+    }
+}
+@media screen and (max-width: 767px){
+    .vwgardening-experties-sec{
+        padding: 15% 0;
+    }
+    .vwgardening-slide-text,.vwgardening-slide-small-head:after{
+        display: none;
+    }
+    .vwgardening-eexpert-content-box{
+        margin: 25px 0;
+    }
+    .vwgardening-project-sec ul.ive-tabs-title-list {
+        display: block;
+    }
+    .vwgardening-testimonial-sec img{
+        margin: 10px auto;
+    }
+    .vwgardening-testimonial-sec .ive-carousel-content-wrap{
+        padding: 20px !important;
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 600px){
+    .vwgardening-slider-sec .carousel-content{
+        max-width: 65%;
+        padding-left: 60px;
+    }
+    .vwgardening-about-content-box {
+        max-width: 100%;
+        padding: 2em;
+    }
+    .vwgardening-blog-sec,.vwgardening-service-sec,.vwgardening-product-sec,.vwgardening-team-sec{
+        padding: 10% 0;
+    }
+    .vwgardening-project-sec{
+        padding: 15% 0;
+    }
+    .vwgardening-service-content-box{
+        padding: 35px 22px;
+        left: -48px;
+        top: 12px;
+    }
+    .vwgardening-price-right-content-box{
+        left: -37px;
+        top: 36px;
+        padding: 50px 36px;
+    }
+    .vwgardening-ecord-content-box{
+        left: 0;
+    }
+    .vwgardening-testimonial-sec .wp-block-columns,.vwgardening-why-choose-box {
+        display: block;
+    }
+    .vwgardening-blog-sec p{
+        text-align: center !important;
+    }
+}
+@media screen and (max-width: 991px) and (min-width: 768px){
+    .vwgardening-slide-text{
+        display: none;
+    }
+    .vwgardening-slider-sec .carousel-content{
+        max-width: 45%;
+    }
+    .vwgardening-expert-button .ive-btn-wrap{
+        width: 140px;
+    }
+    .vwgardening-eexpert-content-box{
+        margin: 25px 0;
+    }
+    .vwgardening-project-sec ul.ive-tabs-title-list{
+        margin: 0;
+    }
+    .vwgardening-price-right-content-box{
+        left: -30px;
+    }
+    .vwgardening-record-box figure {
+        text-align: center;
+    }
+    .vwgardening-service-title h4:after{
+        margin-left: 32px;
+    }
+    .vwgardening-process-icon{
+        background-color : unset !important;
+        border : none !important;
+    }
+    .vwgardening-process-icon-1,.vwgardening-process-icon{
+        position: unset;
+    }
+}
+@media screen and (max-width: 1024px) and (min-width: 992px){
+    .vwgardening-product-sec .woo-prod-img img{
+        margin: 0 auto !important;
+    }
+    .vwgardening-slide-button1 .ive-btn-wrap{
+        width: 116px;
+    }
+    .vwgardening-slider-sec .carousel-content{
+        max-width: 50%;
+    }
+    .vwgardening-expert-button .ive-btn-wrap {
+        width: 140px;
+    }
+    .vwgardening-eexpert-content-box{
+        padding: 40px 45px;
+    }
+    .vwgardening-price-right-content-box{
+        left: -29px;
+        padding: 39px 22px;
+    }
+    .vwgardening-ecord-content-box {
+        top: 14px;
+    }
+}

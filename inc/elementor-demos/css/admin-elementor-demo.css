@@ -1,0 +1,7 @@
+.ocdi__gl-item-container .ocdi__gl-item:last-child{
+	display: none;
+}
+.import-btn-enable{
+	pointer-events: none;
+	opacity: 0.5;
+}
