@@ -318,10 +318,10 @@ require get_template_directory().'/inc/elementor-demos/demo_config.php';
 require get_template_directory().'/inc/elementor-demos/demo-shortcodes.php';
 
 /* URL DEFINES */
-define('VW_GARDENING_LANDSCAPING_PRO_SITE_URL','https://www.vwthemes.com/');
+define('VW_GARDENING_LANDSCAPING_PRO_SITE_URL','https://yenesity.com/');
 /* Theme Credit link */
 function vw_gardening_landscaping_pro_credit_link() {
-  echo esc_html_e(' Design & Developed by','vw-gardening-landscaping-pro'). "<a href=".esc_url(VW_GARDENING_LANDSCAPING_PRO_SITE_URL)." target='_blank'> VW Themes</a>";
+  echo esc_html_e(' Design & Developed by','vw-gardening-landscaping-pro'). "<a href=".esc_url(VW_GARDENING_LANDSCAPING_PRO_SITE_URL)." target='_blank'> Yenesity</a>";
 }
 /*Radio Button sanitization*/
 function vw_gardening_landscaping_pro_sanitize_choices( $input, $setting ) {
